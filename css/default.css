@@ -1,0 +1,19 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  font-size: 1.4rem;
+  background: #000;
+  /* 배경이 검은색이라 기본 color 흰색으로 해줌*/
+  color: #fff;
+}
+
+/* 링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}

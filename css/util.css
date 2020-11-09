@@ -1,0 +1,12 @@
+.a11y-hidden,
+legend {
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    bottom: 0;
+    width: 1px;
+    height: 1px;
+    clip-path: polygon(0 0, 0 0, 0 0,);
+    clip: rect(0, 0, 0, 0);
+    clip: rect(0 0 0 0);
+}
