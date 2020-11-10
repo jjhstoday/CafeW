@@ -1,0 +1,117 @@
+/* 헤더 영역 */
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282725;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFCF9;
+  padding: 0 130px 0 120px;
+  min-width: 1440px;
+  box-sizing: border-box;
+  /* width 값 지정했을때 원래 지정보다 넓어지는 것을 확인해보니 box-sizing: border-box 지정을 하지 않음
+  수업시간에 default값으로 지정되어 있어서 인지하지 못하고 있었음 */
+}
+
+.pageHeading {
+  /* margin-right: 21.388889vw;
+  margin-left: 27.638889vw; */
+  /* 양옆 여백값을 길이대로 px 값을 주지 않고, 뷰포트에 따라 변화할 수 있는 값으로 수정 함 */
+  margin: 0 308px 0 398px;
+}
+
+.pageHeading a {
+  font-size: 1rem;
+}
+
+.memberMenu {
+  order: -1;
+  display: flex;
+  flex-flow: row nowrap;
+  white-space: nowrap;
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 0;
+}
+
+.memberMenu li {
+  padding: 10px;
+}
+
+.memberMenu li:first-child {
+  padding-right: 20px;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.searchFormContainer {
+  position: relative;
+}
+
+
+.searchFormContainer input {
+  width: 242px;
+  background: transparent;
+  color: currentColor;
+  font-size: 1.6rem;
+  padding: 12px 0 12px 10px;
+  border: 0;
+}
+
+.searchButton {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: url(../images/Search-icon.svg) no-repeat 50% 50%;
+  border: 0;
+  padding: 8px;
+}
+
+/* 내비게이션 영역 */
+.navigation {
+  background-color: #282725;
+  color: #FFFCF9;
+  min-width: 1440px;
+}
+
+.mainMenu {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  padding: 47px 130px;
+  list-style: none;
+}
+
+.mainMenu li {
+  list-style: none;
+  width: 180px;
+  margin-right: 64px;
+}
+
+.mainMenu ul {
+  padding: 0;
+  margin-top: 1.75rem;
+}
+
+.mainMenu ul>li {
+  font-size: 1.5rem;
+  margin-bottom: 7px;
+}
+
+.mainMenu ul>li:last-child {
+  margin-bottom: 0;
+}
+
+.menuText {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
