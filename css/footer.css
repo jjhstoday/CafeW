@@ -1,10 +1,12 @@
 .footer {
+  min-width: 1440px;
   background: #282725;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
 }
+
 .footer::before {
   content: "";
   display: block;
@@ -15,6 +17,7 @@
 .footer img {
   margin: 40px 0;
 }
+
 .footerList {
   list-style: none;
   display: flex;
@@ -27,17 +30,18 @@
   margin: 30px auto;
 }
 
-
 .footerList li a {
   display: inline-block;
   height: 22px;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   color: rgba(255, 252, 249, 0.6);
 }
+
 .footerList li:first-child a{
   color: #fffcf9;
 }
+
 .address {
   width: 996px;
   height: 42px;
@@ -46,38 +50,40 @@
   font-style: normal;
   line-height: 1.5;
 }
+
 .address span {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: rgba(255, 252, 249, 0.6);
 }
+/* 주소 줄바꿈을 위해 삽입 */
 .address span:nth-child(3)::after {
   content: "";
   display: block;
 }
+
 .copyright {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   margin-bottom: 60px;
   color: rgba(255, 252, 249, 0.6);
 }
 
 /* 위로가기 버튼 */
-.upButton {
+.upButtonWrapper {
   position: fixed;
-  bottom: 440px;
+  bottom: 30px;
   right: 30px;
 }
-.button {
+
+.upButton {
   cursor: pointer;
   padding: 0;
   border: none;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: url(../images/Up\ Arrow\ button.svg) no-repeat #E27762 center;
-  display: block;
+  background: url(../images/Up-Arrow-button.svg) no-repeat #E27762 center;
   padding-top: 60px;
-  overflow: hidden;
-  
+  overflow: hidden; 
 }
