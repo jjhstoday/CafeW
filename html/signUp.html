@@ -91,39 +91,38 @@
           <h2 class="memberFormHeadline" lang="en">SIGN UP</h2>
           <p class="memberFormText"><span lang="en">cafe W</span>에 가입하세요. 좋은 서비스로 보답하겠습니다.</p>
         </div>
-        <div class="memberList">
+        <div class="memberList necessaryList">
           <label for="user_email">아이디</label>
           <input class="userEmail" type="email" id="user_email" name="userEmail" required aria-required="ture">
           <span>등록할 사용자 계정을 입력합니다.(예:seulbinim@gmail.com)</span>
         </div>
-        <div class="memberList">
+        <div class="memberList necessaryList">
           <label for="user_Password">패스워드</label>
           <input class="userPassword" type="password" id="user_Password" name="userPassword" required aria-required="ture"
             pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$">
           <span>비밀번호를 등록합니다.(특수문자 및 숫자 대,소문자 포함 8자리 이상)</span>
         </div>
-        <div class="memberList">
+        <div class="memberList necessaryList">
           <label for="user_password_check">패스워드 확인</label>
           <input class="userPasswordCheck" type="password" id="user_password_check" name="userPasswordCheck" required aria-required="ture"
             pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$">
           <span>등록한 사용자 계정 비밀번호와 동일해야 합니다.</span>
         </div>
-        <div class="memberList">
+        <div class="memberList necessaryList">
           <label for="user_name">이름</label>
           <input class="userName" type="text" id="user_name" name="userName" required aria-required="ture">
           <span>예) 김데레사</span>
         </div>
-        <div class="memberList userFemaleContainer">
-          <label for="user_female">성별</label>
-          <input class="userFemale" type="radio" id="user_female" name="userSex" required aria-required="ture">
-          <span>여성</span>
+        <div class="memberList necessaryList userGender">
+          <label for="user_gender">성별</label>
+          <input class="userFemale" type="radio" id="user_gender" name="userFemale" required aria-required="ture" checked>
+          <span class="radioOn"></span>
+          <span >여성</span>
+          <input class="userMale" type="radio" id="user_gender" name="userMale" required aria-required="ture">
+          <span class="radioOff"></span>
+          <span >남성</span>
         </div>
-        <div class="memberList userMaleContainer">  
-          <label for="user_male" class="a11y-hidden">성별</label>
-          <input class="userMale" type="radio" id="user_male" name="userSex" required aria-required="ture">
-          <span>남성</span>
-        </div>
-        <div class="memberList">
+        <div class="memberList necessaryList">
           <label for="user_year">생년월일</label>
           <select class="userYear" name="userYear" id="user_year" required aria-required="ture">
             <option value="">년도</option>
@@ -191,12 +190,12 @@
             <option value="음력">음력</option>
           </select>
         </div>
-        <div class="memberList">
+        <div class="memberList necessaryList">
           <label for="user_number">전화번호</label>
           <input class="userNumber" type="number" id="user_number" name="userNumber" required aria-required="ture">
           <span>사용 중인 전화번호를 입력하세요.(하이픈 제외 숫자만 입력)</span>
         </div>
-        <div class="memberList">
+        <div class="memberList necessaryList">
           <label for="user_certification">인증방식</label>
           <ul class="memberCertification" id="user_certification" required>
             <li class="certificationMobile" aria-required="true">

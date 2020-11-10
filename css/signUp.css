@@ -1,4 +1,5 @@
 /* 회원가입 영역 */
+/* 공통 값 영역 */
 body {
   background: #fff;
 }
@@ -38,8 +39,9 @@ body {
   margin: 0;
   padding-bottom: 25px;
 }
+
 .memberFormText [lang="en"] {
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /* 회원가입 이미지 데코레이션 */
@@ -68,9 +70,10 @@ body {
 }
 
 /* 필수 항목 영역 */
+/* 공통 값 영역 */
 .memberList {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .memberList label {
@@ -81,7 +84,7 @@ body {
   margin-bottom: 10px;
 }
 
-.memberList label::after {
+.necessaryList label::after {
   content: "";
   display: inline-block;
   background: url(../images/필수.svg) no-repeat 0 0;
@@ -93,7 +96,7 @@ body {
 
 .memberList span {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   left: 9px;
   font-size: 1.3rem;
   opacity: 70%;
@@ -111,8 +114,10 @@ body {
   height: 34px;
   background: transparent;
   color: #7D6F5D;
+  box-sizing: border-box;
 }
 
+/* 이름 영역 */
 .userName {
   padding: 0 0 0 9px;
   border: 0;
@@ -124,6 +129,60 @@ body {
   color: #7D6F5D;
 }
 
+/* 성별 영역 */
+.userGender {
+  width: 209px;
+  font-size: 1.3rem;
+  color: #7D6F5D;
+  position: absolute;
+  top: 541px;
+  left: 390px;
+}
+
+.userGender label {
+  margin-bottom: 18px;
+}
+
+.userFemale,
+.userMale {
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+.memberFormContainer .userGender span {
+  position: unset;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.memberFormContainer .userGender .radioOn {
+  display: inline-block;
+  background: url(../images/radio\ on.svg) no-repeat 0 0 / 100% 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.memberFormContainer .userFemale:focus+.radioOn {
+  background: url(../images/radio\ off.svg) no-repeat 0 0 / 100% 100%;
+} 
+
+.memberFormContainer .userGender .radioOff {
+  display: inline-block;
+  background: url(../images/radio\ off.svg) no-repeat 0 0 / 100% 100%;
+  width: 20px;
+  height: 20px;
+}
+
+/* 생년월일 영역 */
 .userYear,
 .userMonth,
 .userDay,
@@ -150,50 +209,68 @@ body {
   width: 66px;
 }
 
+/* 전화번호 영역 */
 .userNumber::-webkit-outer-spin-button,
 .userNumber::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
+/* 인증방식 영역 */
 .memberCertification {
   width: 438px;
-  height: 230px;
   border-radius: 3px;
   border: 1px solid rgba(125, 111, 93, .5);
   display: flex;
   flex-flow: row nowrap;
   list-style: none;
   padding-top: 123px;
-  padding-bottom: 22px;
+  padding-bottom: 30px;
+  padding-left: 0;
   position: relative;
 }
 
 .memberCertification::after {
   content: "";
-  display: inline-block;
   width: 204px;
-  transform: rotate(90deg);
   border-bottom: 1px solid rgba(125, 111, 93, .5);
   position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: rotate(90deg);
 }
 
 .memberCertification img {
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .certificationMobile {
-  background: pink;
   margin-left: 49px;
+  margin-right: 92px;
+  text-align: center;
+}
+
+.certificationMobile img {
+  width: 33px;
+  height: 55px;
+  object-fit: cover;
+  top: 53px;
+  left: 93px;
+}
+
+.certificationIpin img {
+  width: 98px;
+  height: 81px;
+  object-fit: cover;
+  top: 27px;
+  right: 61px;
 }
 
 .certificationIpin {
-  background: skyblue;
-  margin-left: 45px;
+  margin-right: 45px;
+  text-align: center;
 }
 
 .mobileTitle,
@@ -211,17 +288,63 @@ body {
   font-weight: 400;
   line-height: 1.4;
   text-align: center;
-  margin: 6px 0 0 0;
+  margin: 6px 0 9px 0;
 }
 
 .mobileText {
-  width: 120px;
+  width: 113px;
+  padding: 0 3px;
 }
 
 .ipinText {
   width: 132px;
 }
 
-
+.certificationBtn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  background: #7D6F5D;
+  border-radius: 3px;
+  padding: 8px 25px;
+  color: #FFFCF9;
+}
 
 /* 선택 항목 영역 */
+/* 닉네임 영역 */
+.userNickname {
+  padding: 0 0 0 9px;
+  border: 0;
+  border: 1px solid rgba(125, 111, 93, 0.5);
+  border-radius: 3px;
+  width: 286px;
+  height: 34px;
+  background: transparent;
+  color: #7D6F5D;
+  box-sizing: border-box;
+}
+
+/* 개인정보 수집동의 및 이용약관 영역 */
+.userGuide {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.userGuideText {
+  width: 100%;
+  height: 169px;
+  padding: 17px 30px 17px 17px;
+  box-sizing: border-box;
+  white-space: pre-line;
+  color: #7D6F5D;
+  font-family: SpoqaHanSans;
+  font-size: 12px;
+  line-height: 1.5;
+  background: #FFFCF9;
+  border: 1px solid rgba(125, 111, 93, 0.3);
+  box-sizing: border-box;
+  border-radius: 3px;
+  resize: none;
+}
