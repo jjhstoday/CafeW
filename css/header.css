@@ -2,27 +2,24 @@
 .header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #282725;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FFFCF9;
+  padding: 0 130px 0 120px;
 }
 
 
 .pageHeading {
-  margin-right: 21.388889vw;
-  margin-left: 27.638889vw;
+  /* margin-right: 21.388889vw;
+  margin-left: 27.638889vw; */
   /* 양옆 여백값을 길이대로 px 값을 주지 않고, 뷰포트에 따라 변화할 수 있는 값으로 수정 함 */
-  /* margin-right: 308px;
-  margin-left: 398px; */
+  margin: 0 308px 0 398px;
 }
 
 .pageHeading a {
   font-size: 1rem;
-}
-
-.pageHeading img {
-  vertical-align: middle;
 }
 
 .memberMenu {
@@ -49,12 +46,12 @@ fieldset {
   padding: 0;
 }
 
-.searchFormCantainer {
+.searchFormContainer {
   position: relative;
 }
 
 
-.searchFormCantainer input {
+.searchFormContainer input {
   width: 242px;
   background: transparent;
   color: currentColor;
@@ -78,12 +75,12 @@ fieldset {
 /* 내비게이션 영역 */
 .navigation {
   background-color: #282725;
+  color: #FFFCF9;
 }
 
 .mainMenu {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
   margin: 0;
   padding: 47px 130px;
   list-style: none;
@@ -91,6 +88,8 @@ fieldset {
 
 .mainMenu li {
   list-style: none;
+  width: 180px;
+  margin-right: 64px;
 }
 
 .mainMenu ul {
