@@ -8,8 +8,11 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   color: #FFFCF9;
   padding: 0 130px 0 120px;
+  min-width: 1440px;
+  box-sizing: border-box;
+  /* width 값 지정했을때 원래 지정보다 넓어지는 것을 확인해보니 box-sizing: border-box 지정을 하지 않음
+  수업시간에 default값으로 지정되어 있어서 인지하지 못하고 있었음 */
 }
-
 
 .pageHeading {
   /* margin-right: 21.388889vw;
@@ -76,6 +79,7 @@ fieldset {
 .navigation {
   background-color: #282725;
   color: #FFFCF9;
+  min-width: 1440px;
 }
 
 .mainMenu {
