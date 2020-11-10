@@ -1,0 +1,83 @@
+.footer {
+  background: #282725;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.footer::before {
+  content: "";
+  display: block;
+  border-bottom: 1px solid rgba(255, 252, 249, 0.2);
+  width: 100%;
+}
+
+.footer img {
+  margin: 40px 0;
+}
+.footerList {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: -1;
+  padding-left: 0;
+  width: 944px;
+  height: 22px;
+  margin: 30px auto;
+}
+
+
+.footerList li a {
+  display: inline-block;
+  height: 22px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 252, 249, 0.6);
+}
+.footerList li:first-child a{
+  color: #fffcf9;
+}
+.address {
+  width: 996px;
+  height: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: normal;
+  line-height: 1.5;
+}
+.address span {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 252, 249, 0.6);
+}
+.address span:nth-child(3)::after {
+  content: "";
+  display: block;
+}
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 60px;
+  color: rgba(255, 252, 249, 0.6);
+}
+
+/* 위로가기 버튼 */
+.upButton {
+  position: fixed;
+  bottom: 440px;
+  right: 30px;
+}
+.button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: url(../images/Up\ Arrow\ button.svg) no-repeat #E27762 center;
+  display: block;
+  padding-top: 60px;
+  overflow: hidden;
+  
+}
