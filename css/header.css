@@ -85,6 +85,7 @@ fieldset {
 .mainMenu {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   margin: 0;
   padding: 47px 130px;
   list-style: none;
@@ -93,7 +94,7 @@ fieldset {
 .mainMenu li {
   list-style: none;
   width: 180px;
-  margin-right: 64px;
+  /* margin-right: 64px; */
 }
 
 .mainMenu ul {
