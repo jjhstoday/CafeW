@@ -29,8 +29,8 @@
     </ul>
     <form action="search.do">
       <fieldset>
-        <div class="searchFormContainer">
-          <legend>검색 영역</legend>
+        <legend>검색 영역</legend>
+          <div class="searchFormContainer">
           <label class="a11y-hidden" for="search">검색어 입력 서식</label>
           <input id="search" title="검색폼" type="text"><button title="검색" aria-label="검색" class="searchButton"
             type="submit"></button>
@@ -93,38 +93,35 @@
         </div>
         <div class="memberList necessaryList">
           <label for="user_email">아이디</label>
-          <input class="userEmail" type="email" id="user_email" name="userEmail" required aria-required="ture">
-          <span>등록할 사용자 계정을 입력합니다.(예:seulbinim@gmail.com)</span>
+          <input class="userEmail" type="email" id="user_email" name="userEmail" placeholder="등록할 사용자 계정을 입력합니다.(예:seulbinim@gmail.com)" required>
+          <span></span>
         </div>
         <div class="memberList necessaryList">
           <label for="user_Password">패스워드</label>
-          <input class="userPassword" type="password" id="user_Password" name="userPassword" required aria-required="ture"
+          <input class="userPassword" type="password" id="user_Password" name="userPassword" placeholder="비밀번호를 등록합니다.(특수문자 및 숫자 대,소문자 포함 8자리 이상)" required"
             pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$">
-          <span>비밀번호를 등록합니다.(특수문자 및 숫자 대,소문자 포함 8자리 이상)</span>
         </div>
         <div class="memberList necessaryList">
           <label for="user_password_check">패스워드 확인</label>
-          <input class="userPasswordCheck" type="password" id="user_password_check" name="userPasswordCheck" required aria-required="ture"
+          <input class="userPasswordCheck" type="password" id="user_password_check" name="userPasswordCheck" placeholder="등록한 사용자 계정 비밀번호와 동일해야 합니다." required
             pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$">
-          <span>등록한 사용자 계정 비밀번호와 동일해야 합니다.</span>
         </div>
         <div class="memberList necessaryList">
           <label for="user_name">이름</label>
-          <input class="userName" type="text" id="user_name" name="userName" required aria-required="ture">
-          <span>예) 김데레사</span>
+          <input class="userName" type="text" id="user_name" name="userName" placeholder="예) 김데레사" required>
         </div>
         <div class="memberList necessaryList userGender">
-          <label for="user_gender">성별</label>
-          <input class="userFemale" type="radio" id="user_gender" name="userFemale" required aria-required="ture" checked>
+          <label for="user_female user_male">성별</label>
+          <input class="userFemale" type="radio" id="user_female" name="userFemale" required checked>
           <span class="radioOn"></span>
           <span>여성</span>
-          <input class="userMale" type="radio" id="user_gender" name="userMale" required aria-required="ture">
+          <input class="userMale" type="radio" id="user_male" name="userMale" required>
           <span class="radioOff"></span>
           <span>남성</span>
         </div>
         <div class="memberList necessaryList">
           <label for="user_year">생년월일</label>
-          <select class="userYear" name="userYear" id="user_year" required aria-required="ture">
+          <select size="1" class="userYear" name="userYear" id="user_year" required>
             <option value="">년도</option>
             <option value="1990">1990</option>
             <option value="1991">1991</option>
@@ -134,7 +131,7 @@
             <option value="1995">1995</option>
           </select>
           <label for="user_month" class="a11y-hidden">생년월일</label>
-          <select class="userMonth" name="userMonth" id="user_month" required aria-required="ture">
+          <select size="1" class="userMonth" name="userMonth" id="user_month" required>
             <option value="">월</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -150,7 +147,7 @@
             <option value="12">12</option>
           </select>
           <label for="user_day" class="a11y-hidden">생년월일</label>
-          <select class="userDay" name="userDay" id="user_day" required aria-required="ture">
+          <select size="1" class="userDay" name="userDay" id="user_day" required>
             <option value="">일</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -185,26 +182,26 @@
             <option value="31">31</option>
           </select>
           <label for="user_calendar" class="a11y-hidden">생년월일</label>
-          <select class="userCalendar" name="userCalendar" id="user_calendar" required aria-required="ture">
-            <option value="양력">양력</option>
+          <select size="1" class="userCalendar" name="userCalendar" id="user_calendar" required>
+            <option disabled value="">양/음력</option>
+            <option selected value="양력">양력</option>
             <option value="음력">음력</option>
           </select>
         </div>
         <div class="memberList necessaryList">
           <label for="user_number">전화번호</label>
-          <input class="userNumber" type="number" id="user_number" name="userNumber" required aria-required="ture">
-          <span>사용 중인 전화번호를 입력하세요.(하이픈 제외 숫자만 입력)</span>
+          <input class="userNumber" type="number" id="user_number" name="userNumber" placeholder="사용 중인 전화번호를 입력하세요.(하이픈 제외 숫자만 입력)" required>
         </div>
         <div class="memberList necessaryList">
-          <label for="user_certification">인증방식</label>
-          <ul class="memberCertification" id="user_certification" required>
-            <li class="certificationMobile" aria-required="true">
+          <label id="user_certification">인증방식</label>
+          <ul class="memberCertification" aria-labelledby="user_certification">
+            <li class="certificationMobile">
               <p class="mobileTitle">휴대폰 인증</p>
               <p class="mobileText">본인 명의 휴대폰으로 인증 절차를 수행합니다.</p>
               <img src="../images/Phone.svg" alt="휴대폰 아이콘">
               <a href="#" class="certificationBtn" target="_blank">인증</a>
             </li>
-            <li class="certificationIpin" aria-required="true">
+            <li class="certificationIpin">
               <p class="ipinTitle">아이핀(i-PIN) 인증</p>
               <p class="ipinText">가입한 아이핀 ID를 사용해 인증 절차를 수행합니다.</p>
               <img src="../images/Desktop.svg" alt="아이핀(i-PIN) 아이콘">
@@ -214,13 +211,12 @@
         </div>
         <div class="memberList">
           <label for="user_nickname">닉네임</label>
-          <input class="userNickname" type="text" id="user_nickname" name="userNickname" maxlength="6">
-          <span>예) 슬비(명사로 이루어진 한글 6자리 이내)</span>
+          <input class="userNickname" type="text" id="user_nickname" name="userNickname" maxlength="6" placeholder="예) 슬비(명사로 이루어진 한글 6자리 이내)">
         </div>
         <div class="memberList">
-          <label for="user_guide">선택적 개인정보 수집동의 및 이용약관</label>
+          <label for="user_guide user_guide_text">선택적 개인정보 수집동의 및 이용약관</label>
           <input class="userGuide" type="checkbox" id="user_guide" name="userGuide">
-          <textarea name="userGuide" id="user_guide" readonly class="userGuideText">본인은 Cafe W(이하 “회사”라 합니다)가 제공하는 콜 마이 네임 서비스 (이하 “서비스”라 합니다)를 이용하기 위해, 다음과 같이 “회사”가 본인의 개인정보를 수집·이용하는 것에 동의합니다.
+          <textarea name="userGuideText" id="user_guide_text" readonly class="userGuideText">본인은 Cafe W(이하 “회사”라 합니다)가 제공하는 콜 마이 네임 서비스 (이하 “서비스”라 합니다)를 이용하기 위해, 다음과 같이 “회사”가 본인의 개인정보를 수집·이용하는 것에 동의합니다.
           ※ 귀하께서는 개인정보 수집·이용에 대한 동의를 거부하실 수 있으나, 동의를 거부하실 경우 서비스 이용을 하실 수 없습니다. 1. 개인정보 항목·목적·보유기간 2. 관계법령에 의한 개인정보 보존기간
           - 서비스이용기록, 접속로그, 접속IP정보 (통신비밀보호법 : 3개월) - 표시/광고에 관한 기록 (전자상거래법 : 6개월) - 계약 또는 청약철회 등에 관한 기록 (전자상거래법 : 5년) -
           대금결제 및 재화 등의 공급에 관한 기록 (전자상거래법 : 5년) - 소비자의 불만 또는 분쟁처리에 관한 기록 (전자상거래법 : 3년) 3. 서비스 이용과정 및 사업 처리과정에서 수집될 수 있는
