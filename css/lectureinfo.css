@@ -1,0 +1,226 @@
+/* lectuInfo section  */
+.lectureInfo {
+  background-color: #7D6F5D;
+  min-width: 1440px;
+  height: 460px;
+}
+
+/* section 전체 묶음 */
+.sectionBundle {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 1222px;
+  margin: 0 auto;
+}
+
+/* margin 병합으로 인해 박스에 마진을 넣었음 */
+.review, .lectureBrochureContainer {
+  margin: 30px 10px;
+}
+
+/* section 3-1 리뷰 */
+.review {
+  background: #282725 url(../images/Score.svg) no-repeat 95% 0 ; 
+  width: 743px;
+  height: 400px;
+  position: relative;
+  padding: 60px 0 0 90px;
+}
+
+/* 헤딩제목위 선 */
+.review:before {
+  content: "";
+  border: 1px solid #7D6F5D;
+  width: 40px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.reviewHead {
+  display: inline-block;
+  font-size: 2.4rem;
+  color: #FFFCF9;
+  margin: 0 0 10px 0;
+}
+
+.explanation {
+  height: 75px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+  line-height: 1.8;
+  color: #FFFCF9;
+  position: relative;
+}
+
+.explanation footer {
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #FFFCF9;
+}
+
+.reviewRating .reviewGrade {
+  font-size: 2.2rem;
+  color: #FFFCF9;
+  margin: 19px 0 0;
+}
+
+.reviewGrade span {
+  font-size: 2.8rem;
+  color: #FFFCF9;
+}
+
+.reviewGrade span:nth-child(2) {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-left: 15px;
+}
+
+/* 재생버튼 */
+.review button {
+  position: absolute;
+  background: url(../images/Play.svg) no-repeat 50% ;
+  width: 40px;
+  height: 40px;
+  padding-top: 40px;
+  margin: 20px 20px;
+  overflow: hidden;
+  border: none;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+/* section 3-2, 3-3 묶은 디비젼 */
+.lectureBrochureContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 400px;
+  width: 459px;
+}
+
+/* section 3-2 인기강좌 */
+.favoriteLecture {
+  position: relative;
+  background-color: #FFFCF9;
+  height: 220px;
+}
+
+.lectureHeading {
+margin: 0;
+padding: 30px 0 0 24px;
+font-size: 2.2rem;
+font-weight: 700;
+color: #7D6F5D;
+}
+
+.lectureHeading span {
+  font-size: 2.6rem;
+}
+
+.lectureList {
+  padding: 0 35px 0 50px;
+  color: #7D6F5D;
+}
+
+.lectureList li {
+  position: relative;
+  margin-top: 10px;
+}
+
+.lectureList li a {
+  display: block;
+  width: 290px;
+  margin-right: 20px;
+}
+
+/* section 3-2 순위 변동 이미지 */
+.lectureList li em {
+  position: absolute;
+  right: -5px;
+  top: 0;
+  width: 28px;
+  height: 0;
+  padding-top: 29px;
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.up {
+  background: url(../images/increase.svg) no-repeat 50%;
+}
+
+.new {
+  background: url(../images/new.svg) no-repeat 50%;
+}
+
+.down {
+  background: url(../images/decrease.svg) no-repeat 50%;
+}
+
+.noChange {
+  background: url(../images/same.svg) no-repeat 50%;
+}
+
+/* section 3-2 더보기 */
+.favoriteLecture >  a {
+  position: absolute;
+  top: 34px;
+  right: 25px;
+}
+
+.favoriteLecture > a img {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #E27762;
+  padding: 1px;
+}
+
+/* section 3-3 다운로드 */
+.brochure {
+  background-color: #E27762;
+  position: relative;
+  height: 160px;
+}
+
+.brochureHeading {
+  display: inline-block;
+  margin: 0;
+  color: #FFFCF9;
+}
+
+.brochureHeading a{
+  display: inline-block;
+  margin: 25px;
+  width: 132px;
+  height: 68px;
+  font-size: 3.1rem;
+  text-align: center;
+}
+
+.brochure img {
+  position: absolute;
+  right: 0;
+  top: -43px;  
+}
+
+.brochure > a {
+  display: inline-block;
+  background: url(../images/Up-Arrow-button.svg) no-repeat 0 0 / 120%;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  width: 33px;
+  height: 22px;
+  padding-top: 33px;
+  overflow: hidden;
+  opacity: 0.5;
+}
