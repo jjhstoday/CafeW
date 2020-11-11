@@ -73,6 +73,7 @@ fieldset {
   background: url(../images/Search-icon.svg) no-repeat 50% 50%;
   border: 0;
   padding: 8px;
+  cursor: pointer;
 }
 
 /* 내비게이션 영역 */
