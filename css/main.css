@@ -1,18 +1,19 @@
 /* favoriteMenu 영역 (section6) */
 .favoriteMenu {
   background-image: linear-gradient(105.54deg, rgba(32, 23, 1, 0.5) 36.2%, rgba(95, 57, 35, 0.2) 74.71%), url(../images/Image\ 10.png);
-  background-size: auto 100%;
-  background-position: right bottom;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 30% bottom;
   background-attachment: fixed;
   background-blend-mode: multiply;
   min-width: 1440px;
-  padding: 110px 76px 110px 110px;
+  padding: 110px 76px 110px 64px;
   color: #FFFCF9;
   position: relative;
 }
 
 .favMenuContainer {
-  width: 404px;
+  width: 450px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -44,9 +45,8 @@
 
 .favBrief {
   margin: 0;
-  width: 391px;
+  width: 450px;
   font-size: 1.6rem;
-  white-space: pre-line;
   line-height: 1.6;
   animation-delay: 200ms;
 }
@@ -58,7 +58,7 @@
   margin-bottom: 15px;
   font-size: 3.2rem;
   font-weight: 700;
-  text-indent: 200px;
+  text-indent: 240px;
   animation-delay: 300ms;
 }
 
