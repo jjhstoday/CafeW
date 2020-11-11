@@ -44,6 +44,12 @@ body {
   text-transform: uppercase;
 }
 
+.memberForm input::placeholder {
+  font-size: 1.3rem;
+  opacity: 70%;
+  color: #7D6F5D;
+}
+
 /* 회원가입 이미지 데코레이션 */
 .memberForm::before {
   content: "";
@@ -76,7 +82,6 @@ body {
 .userName:focus,
 .userNumber:focus,
 .userNickname:focus {
-  background: #fff;
   outline: 0;
   border: 1px solid #7D6F5D;
 }
@@ -93,7 +98,6 @@ body {
 .memberFormSubmit:hover {
   background: #282725;
 }
-
 
 
 /* 필수 항목 영역 */
@@ -121,20 +125,11 @@ body {
   margin-left: .2em;
 }
 
-.memberList span {
-  position: absolute;
-  bottom: 8px;
-  left: 9px;
-  z-index: -1;
-  font-size: 1.3rem;
-  opacity: 70%;
-}
-
 .userEmail,
 .userPassword,
 .userPasswordCheck,
 .userNumber {
-  padding: 0 0 0 9px;
+  padding: 3px 0 0 9px;
   border: 0;
   border: 1px solid rgba(125, 111, 93, 0.5);
   border-radius: 3px;
@@ -147,7 +142,7 @@ body {
 
 /* 이름 영역 */
 .userName {
-  padding: 0 0 0 9px;
+  padding: 3px 0 0 9px;
   border: 0;
   border: 1px solid rgba(125, 111, 93, 0.5);
   border-radius: 3px;
@@ -182,7 +177,7 @@ body {
   z-index: 10;
 }
 
-.memberFormContainer .userGender span {
+.memberFormContainer .userGender span{
   position: unset;
   display: inline-block;
   font-size: 1.3rem;
@@ -322,7 +317,7 @@ body {
 }
 
 .mobileText {
-  width: 113px;
+  width: 118px;
   padding: 0 3px;
 }
 
@@ -344,7 +339,7 @@ body {
 /* 선택 항목 영역 */
 /* 닉네임 영역 */
 .userNickname {
-  padding: 0 0 0 9px;
+  padding: 3px 0 0 9px;
   border: 0;
   border: 1px solid rgba(125, 111, 93, 0.5);
   border-radius: 3px;
@@ -420,5 +415,5 @@ body {
   font-weight: 700;
   line-height: 2.4;
   color: #FFFCF9;
+  cursor: pointer;
 }
-
