@@ -73,6 +73,7 @@ fieldset {
   background: url(../images/Search-icon.svg) no-repeat 50% 50%;
   border: 0;
   padding: 8px;
+  cursor: pointer;
 }
 
 /* 내비게이션 영역 */
@@ -85,6 +86,7 @@ fieldset {
 .mainMenu {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   margin: 0;
   padding: 47px 130px;
   list-style: none;
@@ -93,7 +95,7 @@ fieldset {
 .mainMenu li {
   list-style: none;
   width: 180px;
-  margin-right: 64px;
+  /* margin-right: 64px; */
 }
 
 .mainMenu ul {
