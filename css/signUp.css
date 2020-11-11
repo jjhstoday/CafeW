@@ -8,7 +8,7 @@ body {
   border: 1px solid #CBC5BE;
   border-radius: 3px;
   width: 742px;
-  margin: 100px auto 0 auto;
+  margin: 100px auto;
   padding: 286px 152px 50px 152px;
   color: #7D6F5D;
   box-sizing: border-box;
@@ -322,7 +322,7 @@ body {
 }
 
 .mobileText {
-  width: 113px;
+  width: 119px;
   padding: 0 3px;
 }
 
