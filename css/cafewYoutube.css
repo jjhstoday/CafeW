@@ -3,6 +3,10 @@
   min-width: 1440px;
   padding: 25px 0;
   background: #282725;
+  background-image: url(../images/star-W-logo.svg),
+                    url(../images/star-W-logo.svg);
+  background-repeat: no-repeat; 
+  background-position: 5.902778% 50%, 94.097222% 50%;
 }
 
 .cafewYoutubeContainer {
@@ -11,10 +15,10 @@
 
 .iframeContainer {
   width: 960px;
-  padding-top: 37.5%;
+  height: 540px;
   margin: 0 auto;
-  height: 0;
   position: relative;
+  box-sizing: border-box;
 }
 
 .iframeContainer iframe {
@@ -24,28 +28,4 @@
   top: 0;
   left: 0;
   border: 0;
-}
-
-.iframeContainer::before {
-  content: "";
-  background: url(../images/star-W-logo.svg) no-repeat 0 0 / 100% 100%;
-  display: inline-block;
-  width: 70px;
-  height: 95px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -155px;
-}
-
-.iframeContainer::after {
-  content: "";
-  background: url(../images/star-W-logo.svg) no-repeat 0 0 / 100% 100%;
-  display: inline-block;
-  width: 70px;
-  height: 95px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -155px;
 }
