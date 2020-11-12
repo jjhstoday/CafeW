@@ -55,6 +55,7 @@
   border: 2px solid #7D6F5D;
   border-radius: 3px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 /* 커리큘럼 데코레이션 */
@@ -86,11 +87,13 @@
 }
 
 /* :hover 값 설정 영역 */
-.curCover:hover {
+.curCover:hover,
+.curCover:focus {
   display: none;
 }
 
-.curCover:hover+.curBack {
+.curCover:hover+.curBack,
+.curCover:focus+.curBack {
   display: block;
 }
 
