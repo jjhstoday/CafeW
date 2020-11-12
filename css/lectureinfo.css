@@ -185,7 +185,7 @@ color: #7D6F5D;
 
 /* section 3-3 다운로드 */
 .brochure {
-  background-color: #E27762;
+  background-color: #c75842;
   position: relative;
   height: 160px;
 }
@@ -193,12 +193,12 @@ color: #7D6F5D;
 .brochureHeading {
   display: inline-block;
   margin: 0;
-  color: #FFFCF9;
 }
 
 .brochureHeading a{
   display: inline-block;
   margin: 25px;
+  color: #FFFFFF;
   width: 132px;
   height: 68px;
   font-size: 3.1rem;
