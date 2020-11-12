@@ -12,19 +12,39 @@
   position: relative;
 }
 
-.curBack {
-  background: #FFFCF9;
-  box-shadow: 0px 0px 15px rgba(103, 48, 25, 0.3);
+.curContainer {
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  margin: 0 auto;
   position: relative;
+}
+
+.curBack,
+.curFront {
+  position: absolute;
+  background: #FFFCF9;
+  box-shadow: 0px 0px 15px rgba(103, 48, 25, 0.3);
+  border-radius: 50%;
+  backface-visibility: hidden;
+  transition: all 1s ease;
+}
+
+.curBack {
+  width: 300px;
+  height: 300px;
   text-align: center;
   padding: 80px 0 50px 0;
   color: #7D6F5D;
-  overflow: hidden;
-  margin: 0 auto;
-  display: none;
+  transform: rotateY(180deg);
+}
+
+.curFront {
+  top: 60px;
+  left: 60px;
+  width: 180px;
+  height: 180px;
+  padding: 29px 45px;
+  transform: rotateY(0deg);
 }
 
 .curTitle {
@@ -59,20 +79,6 @@
 }
 
 /* 커리큘럼 데코레이션 */
-.curCover {
-  background: #FFFCF9;
-  width: 180px;
-  height: 180px;
-  box-shadow: 0px 0px 15px rgba(103, 48, 25, 0.3);
-  border-radius: 50%;
-  position: absolute;
-  top: 240px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  padding: 29px 45px;
-}
-
 .curBack::after {
   content: "";
   display: inline-block;
@@ -87,10 +93,10 @@
 }
 
 /* :hover 값 설정 영역 */
-.curCover:hover {
-  display: none;
+.curContainer:hover .curBack {
+  transform: rotateY(0deg);
 }
 
-.curCover:hover+.curBack {
-  display: block;
+.curContainer:hover .curFront {
+  transform: rotateY(180deg);
 }
