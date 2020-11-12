@@ -1,19 +1,18 @@
 /* section9 매장찾기 영역 */
 .cafewStore {
   min-width: 1440px;
-  background: black;
   background: radial-gradient(65.6% 264.49% at 59.55% 37.62%, rgba(40, 39, 37, 0.95) 0%, #282725 73.46%, #171615 100%);
   color: #FFFCF9;
   position: relative;
   padding-top: 80px;
 }
 
-.cafewStore::after {
+.storeContainer::after {
   content: "";
   display: inline-block;
   width: 152px;
   height: 127px;
-  background: url(../images/Coffee\ Store.png) no-repeat 0 0 / 100% 100%;
+  background: url(../images/cafewStore-storeicon.png) no-repeat 0 0 / 100% 100%;
   position: absolute;
   left: 65.138889%;
   bottom: 0;
@@ -66,7 +65,7 @@
 }
 
 .cafewStore::before {
-  background: url(../images/Image\ 04_2.png) no-repeat 50% 50% / cover;
+  background: url(../images/cafewStore-background01.png) no-repeat 50% 50% / cover;
   width: 360px;
   height: 360px;
   left: 174px;
@@ -74,7 +73,7 @@
 }
 
 .cafewStore::after {
-  background: url(../images/Image\ 14_2.png) no-repeat 50% 50% / cover;
+  background: url(../images/cafewStore-background02.png) no-repeat 50% 50% / cover;
   width: 220px;
   height: 220px;
   left: 440px;
