@@ -1,0 +1,81 @@
+/* section9 매장찾기 영역 */
+.cafewStore {
+  min-width: 1440px;
+  background: radial-gradient(65.6% 264.49% at 59.55% 37.62%, rgba(40, 39, 37, 0.95) 0%, #282725 73.46%, #171615 100%);
+  color: #FFFCF9;
+  position: relative;
+  padding-top: 80px;
+}
+
+.storeContainer::after {
+  content: "";
+  display: inline-block;
+  width: 152px;
+  height: 127px;
+  background: url(../images/cafewStore-storeicon.png) no-repeat 0 0 / 100% 100%;
+  position: absolute;
+  left: 65.138889%;
+  bottom: 0;
+}
+
+.storeContainer {
+  display: inline-block;
+  margin-bottom: 127px;
+  padding-left: 53.75%;
+}
+
+.storeHeadline {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.storeBrief {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.storeList {
+  margin-bottom: 42px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.storeList em {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.storePlus {
+  padding: 12px 25px;
+  font-size: 1.6rem;
+  border: 1px solid #FFFCF9;
+  border-radius: 3px;
+  margin-bottom: 115px;
+}
+
+.cafewStore::before,
+.cafewStore::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.6));
+}
+
+.cafewStore::before {
+  background: url(../images/cafewStore-background01.png) no-repeat 50% 50% / cover;
+  width: 360px;
+  height: 360px;
+  left: 174px;
+  top: -50px;
+}
+
+.cafewStore::after {
+  background: url(../images/cafewStore-background02.png) no-repeat 50% 50% / cover;
+  width: 220px;
+  height: 220px;
+  left: 440px;
+  top: 140px;
+}
