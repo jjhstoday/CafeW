@@ -3,6 +3,7 @@
     background: #F3D6B0;
     padding: 83px 0 123px 119px;
     position: relative;
+    min-width: 1440px;
 }
 
 .beveragesBrief {
