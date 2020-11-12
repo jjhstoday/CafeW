@@ -13,7 +13,7 @@
     font-size: 40px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #A37356;
+    color: #9f7054;
 }
 
 .beveragesBrief .whiteSpace:first-child {
@@ -27,7 +27,7 @@
     content: "";
     display: inline-block;
     width: 160px;
-    border-bottom: 2px solid #A37356;
+    border-bottom: 2px solid #9f7054;
     transform: translateY(-4px);
 }
 
@@ -37,7 +37,7 @@
     font-size: 9rem;
     line-height: 0.9;
     letter-spacing: 0.1em;
-    color: #E27762;
+    color: #c75842;
 }
 
 .beveragesBrief span[lang="ko"] {
@@ -50,7 +50,7 @@
     content: "";
     display: block;
     width: 100%;
-    border-bottom: 2px solid #A37356;
+    border-bottom: 2px solid #9f7054;
     margin-top: 20px;
 }
 
@@ -130,11 +130,11 @@
     display: block;
     width: 128px;
     height: 36px;
-    border: 2px solid #E27762;
+    border: 2px solid #ba1f00;
     border-radius: 3px;
     padding: 8px 0;
     text-align: center;
-    color: #E27762;
+    color: #ba1f00;
     font-style: 1.6rem;
     font-weight: 700;
     line-height: 1;

@@ -168,6 +168,10 @@
   cursor: pointer;
 }
 
+.signInFormContainer button[type="submit"]:hover {
+  background: #282725;
+}
+
 .infoBox {
   padding: 0 152px;
 }

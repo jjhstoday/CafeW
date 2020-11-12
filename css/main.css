@@ -107,6 +107,7 @@
     opacity: 0;
     transform: translateX(-70%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -120,4 +121,45 @@
   animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
+}
+
+/* 영업시간 조정 안내 알림창(fixed) */
+.noticeBar {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  z-index: 9999;
+  transform: translateX(-50%);
+  width: 601px;
+  height: 60px;
+  background: url(../images/Sound-icon.svg) no-repeat 30px 50% / 26px 24px,
+    rgba(226, 119, 98, .9);
+  color: #FFFCF9;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.noticeBar p {
+  display: inline-block;
+  width: 230px;
+  margin-left: 75px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.noticeBar time {
+  margin-left: 132px;
+}
+
+.noticeBar .closeButton {
+  width: 40px;
+  height: 40px;
+  background: url(../images/close-icon.svg) no-repeat 50% 50% / 21px 21px;
+  border: 0;
+  padding-top: 40px;
+  margin-left: 30px;
+  overflow: hidden;
+  cursor: pointer;
 }
