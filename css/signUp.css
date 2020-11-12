@@ -167,6 +167,7 @@ select::-ms-expand {display:none;}
 .userGender {
   display: inline-block;
   margin: 0 0 0 15px;
+  font-size: 0;
 }
 
 .userGenderBrief {
@@ -174,6 +175,15 @@ select::-ms-expand {display:none;}
   color: #7D6F5D;
   font-weight: 700;
   margin: 0 0 14px 0;
+}
+
+.userGender label[for="user_female"] {
+  margin-right: 30px;
+  margin-left: 4px;
+}
+
+.userGender label[for="user_male"] {
+  margin-left: 2px;
 }
 
 .userGenderBrief::after {
@@ -208,11 +218,11 @@ select::-ms-expand {display:none;}
 }
 
 .femaleRadio {
-  left: 3px;
+  left: 0px;
 }
 
 .maleRadio {
-  left: 64px;
+  left: 79px;
 }
 
 .radioOn + .radioImage {
