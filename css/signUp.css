@@ -4,6 +4,9 @@ body {
   background: #fff;
 }
 
+/* IE에서 select arrow 삭제해주는 코드 */
+select::-ms-expand {display:none;}
+
 .memberForm {
   border: 1px solid #CBC5BE;
   border-radius: 3px;
@@ -66,7 +69,7 @@ body {
 .memberForm::after {
   content: "";
   display: inline-block;
-  background: url(../images/Group.png) no-repeat 0 0 / 100% 100%;
+  background: url(../images/Barista\ Man.png) no-repeat 0 0 / 100% 100%;
   opacity: 30%;
   width: 135px;
   height: 392px;
@@ -118,7 +121,7 @@ body {
 .necessaryList label::after {
   content: "";
   display: inline-block;
-  background: url(../images/필수.svg) no-repeat 0 0;
+  background: url(../images/necessary.svg) no-repeat 0 0;
   width: 7px;
   height: 7px;
   vertical-align: top;
@@ -133,7 +136,7 @@ body {
   border: 0;
   border: 1px solid rgba(125, 111, 93, 0.5);
   border-radius: 3px;
-  width: 100%;
+  width: 438px;
   height: 34px;
   background: transparent;
   color: #7D6F5D;
@@ -141,6 +144,14 @@ body {
 }
 
 /* 이름 영역 */
+.userNameContainer {
+  display: inline-block;
+}
+
+.userNameContainer label {
+  width: 209px;
+}
+
 .userName {
   padding: 3px 0 0 9px;
   border: 0;
@@ -154,55 +165,58 @@ body {
 
 /* 성별 영역 */
 .userGender {
-  width: 209px;
-  font-size: 1.3rem;
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+
+.userGenderBrief {
+  font-size: 1.4rem;
   color: #7D6F5D;
-  position: absolute;
-  top: 541px;
-  left: 390px;
+  font-weight: 700;
+  margin: 0 0 14px 0;
+}
+
+.userGenderBrief::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/necessary.svg) no-repeat 0 0;
+  width: 7px;
+  height: 7px;
+  vertical-align: top;
+  margin-left: .2em;
+}
+
+.userGender input[type="radio"] {
+  opacity: 0;
+  position: relative;
+  z-index: 10;
+  left: 1px;
 }
 
 .userGender label {
-  margin-bottom: 18px;
-}
-
-.userFemale,
-.userMale {
-  margin: 0;
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  width: 20px;
-  height: 20px;
-  z-index: 10;
-}
-
-.memberFormContainer .userGender span{
-  position: unset;
-  display: inline-block;
-  font-size: 1.3rem;
   font-weight: 400;
-  line-height: 1.6;
-  vertical-align: middle;
-  margin-right: 5px;
+  display: inline-block;
 }
 
-.memberFormContainer .userGender .radioOn {
+.radioImage {
+  position: absolute;
+  background: url(../images/radio\ off.svg) no-repeat 0 50% / 20px 20px;
   display: inline-block;
-  background: url(../images/radio\ on.svg) no-repeat 0 0 / 100% 100%;
   width: 20px;
   height: 20px;
+  top: 53%;
 }
 
-.memberFormContainer .userFemale:focus+.radioOn {
-  background: url(../images/radio\ off.svg) no-repeat 0 0 / 100% 100%;
-} 
+.femaleRadio {
+  left: 3px;
+}
 
-.memberFormContainer .userGender .radioOff {
-  display: inline-block;
-  background: url(../images/radio\ off.svg) no-repeat 0 0 / 100% 100%;
-  width: 20px;
-  height: 20px;
+.maleRadio {
+  left: 64px;
+}
+
+.radioOn + .radioImage {
+  background-image: url(../images/radio\ on.svg);
 }
 
 /* 생년월일 영역 */
@@ -351,28 +365,63 @@ body {
 }
 
 /* 개인정보 수집동의 및 이용약관 영역 */
+.userGuideContainer label[for="user_guide"]{
+  height: 20px;
+  background: url(../images/check-circle-disable.svg) no-repeat 95% 0,
+  url(../images/check-bar-disable.svg) no-repeat 99% 50%;
+  transition: 300ms;
+}
+
+.is__check label[for="user_guide"] {
+  background: url(../images/check-circle-enable.svg) no-repeat 100% 0,
+  url(../images/check-bar-enable.svg) no-repeat 99% 50%;
+}
+
 .userGuide {
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 0;
   z-index: 10;
+}
+
+.textareaContainer {
+  padding: 17px 11px 15px 17px;
+  background: #FFFCF9;
+  border: 1px solid rgba(125, 111, 93, 0.3);
+  border-radius: 3px;
 }
 
 .userGuideText {
   width: 100%;
   height: 169px;
-  padding: 17px 30px 17px 17px;
-  box-sizing: border-box;
+  border: none;
+  padding-right: 15px;
   white-space: pre-line;
   color: #7D6F5D;
-  font-family: SpoqaHanSans;
-  font-size: 12px;
-  line-height: 1.5;
   background: #FFFCF9;
-  border: 1px solid rgba(125, 111, 93, 0.3);
-  box-sizing: border-box;
+  font-family: SpoqaHanSans;
+  font-size: 1.2rem;
+  line-height: 1.5;
   border-radius: 3px;
+  /* 자간이 넓어서 줄바꿈 되는 현상때문에 넣어줌 */
+  letter-spacing: -0.1em;
   resize: none;
+}
+
+.userGuideText::-webkit-scrollbar {
+  border-radius: 2px;
+  width: 4px;
+}
+
+.userGuideText::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #7D6F5D;
+}
+
+.userGuideText::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background: rgba(125, 111, 93, 0.3);
 }
 
 /* 추가 안내 텍스트 */

@@ -1,0 +1,106 @@
+/* section7 coffeeLab*/
+
+/* 이미지 hover시 하단 흰색 바 애니메이션 */
+@keyframes barAnimation{
+  0% {
+    width: 0;
+  }
+  100%{
+    width: 180px;
+  }
+}
+
+.coffeeLab {
+  min-width: 1440px;
+  height: 1192px;
+  background: #FFFCF9;
+  position: relative;
+}
+
+.coffeeLab p[lang="en"] {
+  font-weight: 300;
+  font-size: 4.6rem;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 80px 0 12px 0;
+}
+
+.coffeeLab p[lang="en"] span {
+  font-weight: 700;
+}
+
+.coffeeLab p[lang="ko"] {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin: 0;
+}
+
+.coffeeLab p[lang="ko"] span {
+  font-weight: 700;
+}
+
+.coffeeLab p[lang="ko"]::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #7D6F5D;
+  margin: 55px auto 0;
+  width: 70px;
+}
+
+.labList {
+  list-style: none;
+}
+
+.labList li {
+  position: absolute;
+  width: 692px;
+  height: 692px;
+  transition: .5s;
+}
+
+.labList .labMenu {
+  top: 287px;
+  left: 120px;
+  background: url(../images/lab-menu-background.png) no-repeat 0 0 / 100% 100%;
+  z-index: 5;
+}
+
+.labList .labBarista {
+  top: 420px;
+  left: 628px;
+  background: url(../images/lab-barista-background.png) no-repeat 0 0 / 100% 100%;
+}
+
+.labList li:hover {
+  background-size: 105% 105%;
+}
+
+.labList li:hover a::after {
+  animation: barAnimation .5s;
+}
+
+.coffeeLab a::after {
+  content: "";
+  display: block;
+  border-bottom: 10px solid #FFFCF9;
+  margin-top: 30px;
+  width: 180px;
+  margin: 30px auto;
+}
+
+.coffeeLab a {
+  display: block;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFCF9;
+  margin: 497px auto 0;
+}
