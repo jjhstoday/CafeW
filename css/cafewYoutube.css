@@ -9,23 +9,15 @@
   background-position: 5.902778% 50%, 94.097222% 50%;
 }
 
-.cafewYoutubeContainer {
-  margin: 0;
-}
-
 .iframeContainer {
   width: 960px;
   height: 540px;
   margin: 0 auto;
   position: relative;
-  box-sizing: border-box;
 }
 
 .iframeContainer iframe {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   border: 0;
 }
