@@ -87,14 +87,10 @@
 }
 
 /* :hover 값 설정 영역 */
-.curCover:hover,
-.curCover:focus {
+.curCover:hover {
   display: none;
 }
 
-.curCover:hover+.curBack,
-.curCover:focus+.curBack {
+.curCover:hover+.curBack {
   display: block;
 }
-
-
