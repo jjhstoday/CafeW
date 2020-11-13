@@ -225,3 +225,13 @@
 .signIn .memberMenu li span {
   margin: 0 8px;
 }
+
+.buttons button{
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.close {
+  cursor: pointer;
+}

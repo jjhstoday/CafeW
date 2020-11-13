@@ -14,6 +14,9 @@
 
     <!-- 스타일링 -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- 스크립트 -->
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -84,10 +87,10 @@
             </li>
         </ul>
     </nav>
-    <div class="noticeBar">
+    <div class="noticeBar" id="notice_bar">
         <p>카페 W 영업시간 조정 안내</p>
         <time datetime="2020-02-19">2020.02.19</time>
-        <button class="closeButton">알림창 닫기 버튼</button>
+        <button class="closeButton" onclick="noticeNone()">알림창 닫기 버튼</button>
     </div>
     <main id="content">
         <!-- section1 -->
@@ -143,8 +146,8 @@
                         <li>
                             <h4 class="listHeading"><span class="whiteSpace">GIT &amp;</span> HTML&#47;CSS</h4>
                             <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
-                            <button class="informationButton" type="button" title="강의 정보">강의 정보</button>
-                            <div class="lectureDetail">
+                            <button class="informationButton" type="button" title="강의 정보" onclick="modalOpen()">강의 정보</button>
+                            <div class="lectureDetail" id="lecture_modal">
                                 <h4 class="detailHeading">GIT &amp; HTML&#47;CSS</h4>
                                 <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
                                 <span class="detailLating"><strong>★ ★ ★ ★ <span>★</span></strong>4점</span>
@@ -180,7 +183,7 @@
                                         </dd>
                                     </div>
                                 </dl>
-                                <button class="close" type="button">닫기</button>
+                                <button class="close" type="button" onclick="modalClose()">닫기</button>
                             </div>
                         </li>
                         <li>
@@ -195,9 +198,9 @@
                     <div class="buttons">
                         <button class="pauseButton">멈춤</button>
                         <div class="nextButton">
-                            <button class="indicatorActiveButton">다음</button>
-                            <button class="indicatorButton">다음</button>
-                            <button class="indicatorButton">다음</button>
+                            <button class="indicatorActiveButton">1번 영역</button>
+                            <button class="indicatorButton">2번 영역</button>
+                            <button class="indicatorButton">3번 영역</button>
                         </div>
                     </div>
                 </div>

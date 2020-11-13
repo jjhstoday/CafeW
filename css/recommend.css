@@ -90,6 +90,7 @@
   font-weight: 700;
   text-align: center;
   line-height: 1.6;
+  z-index: 10;
   cursor: pointer;
 }
 
@@ -105,10 +106,16 @@
   align-items: flex-start;
   z-index: 10;
   border-radius: 6px;
+  display: none;
+  text-align: start;
+}
+
+.is__active .lectureDetail {
+  display: block;
 }
 
 .detailHeading {
-  width: 262px;
+  width: 270px;
   height: 28px;
   margin: 0 0 4px;
   font-size: 2.8rem;
@@ -165,8 +172,6 @@
   display: flex;
   align-items: center;
   border-bottom: 0;
-}
-.detailInformation div:last-child dt{
 }
 
 .detailInformation dt,
@@ -365,6 +370,8 @@
   text-align: center;
   line-height: 1.6;
   cursor: pointer;
+  z-index: 10;
+  cursor: pointer;
 }
 
 /* 사진재생 버튼 */
@@ -464,4 +471,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
 }
