@@ -1,5 +1,5 @@
 .main {
-  background: url(../images/sign-in-background-coffee.jpg) no-repeat 0 0 / 100% 100%;
+  background: url(../images/sign-in-background-coffee.jpg) no-repeat 0 0 / cover;
   min-width: 1440px;
 }
 
@@ -224,4 +224,14 @@
 
 .signIn .memberMenu li span {
   margin: 0 8px;
+}
+
+.buttons button{
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.close {
+  cursor: pointer;
 }
