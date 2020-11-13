@@ -74,9 +74,12 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
+  width: 60px;
+  height: 60px;
 }
 
 .upButton {
+  display: inline-block;
   cursor: pointer;
   padding: 0;
   border: none;
@@ -84,6 +87,6 @@
   height: 60px;
   border-radius: 50%;
   background: url(../images/Up-Arrow-button.svg) no-repeat #E27762 center;
-  padding-top: 60px;
+  padding: 60px 0 0 0;
   overflow: hidden; 
 }

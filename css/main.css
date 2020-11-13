@@ -1,5 +1,5 @@
 /* 스킵 내비게이션 */
-.skip-nav a {
+.skipNav a {
   position: absolute;
   top: -36px;
   /* left: 50%;
@@ -18,7 +18,7 @@
   z-index: 10;
 }
 
-.skip-nav a:focus {
+.skipNav a:focus {
   height: auto;
   padding: 6px 0;
   top: 0;
