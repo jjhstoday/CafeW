@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe W</title>
+  <meta name="description" content="Cafe W 홈페이지 입니다." />
+  <meta name="keywords" content="Cafe W, 커피, 브랜드, 사이트, 홈페이지" />
+  <meta name="author" content="김태윤, 류하준, 장지혜" />
+
+  <link rel="preload" as="style" href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" />
+  <link rel="preload" as="style" href="../css/style.css" />
+
+  <!-- 스타일링 -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- 스크립트 -->
+  <script src="../js/signUp.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="pageHeading" aria-label="Cafe W">
+      <a href="index.html">
+        <img src=" ../images/CafeW-logo.svg" alt="cafe W 로고">
+      </a>
+    </h1>
+    <ul class="memberMenu">
+      <li><a href="signIn.html">Sign In</a></li>
+      <li><a href="signUp.html">Sign Up</a></li>
+    </ul>
+    <form action="search.do">
+      <fieldset>
+        <legend>검색 영역</legend>
+        <div class="searchFormContainer">
+          <label class="a11y-hidden" for="search">검색어 입력 서식</label>
+          <input id="search" title="검색폼" type="text"><button title="검색" aria-label="검색" class="searchButton"
+            type="submit"></button>
+        </div>
+      </fieldset>
+    </form>
+  </header>
+  <nav class="navigation">
+    <h2 class="a11y-hidden">메인메뉴</h2>
+    <ul class="mainMenu">
+      <li>
+        <h3 class="menuText">Drinks</h3>
+        <ul class="drinksMenuList">
+          <li><a href="#">콜드 브루</a></li>
+          <li><a href="#">에스프레소</a></li>
+          <li><a href="#">기타 제조 음료</a></li>
+        </ul>
+      </li>
+      <li class="">
+        <h3 class="menuText">Foods</h3>
+        <ul class="foodsMenuList">
+          <li><a href="#">베이커리</a></li>
+          <li><a href="#">케잌</a></li>
+          <li><a href="#">샌드위치 & 샐러드</a></li>
+        </ul>
+      </li>
+      <li class="">
+        <h3 class="menuText">Products</h3>
+        <ul class="productsMenuList">
+          <li><a href="#">머그</a></li>
+          <li><a href="#">텀블러</a></li>
+          <li><a href="#">커피용품</a></li>
+        </ul>
+      </li>
+      <li class="">
+        <h3 class="menuText">Lectures</h3>
+        <ul class="lecturesMenuList">
+          <li><a href="#">UI 구조 & 디자인</a></li>
+          <li><a href="#">UI 인터렉션 주니어</a></li>
+          <li><a href="#">리액트 프로그래밍</a></li>
+        </ul>
+      </li>
+      <li class="">
+        <h3 class="menuText">Customer Services</h3>
+        <ul class="customerServicesMenuList">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">추천 채널</a></li>
+          <li><a href="#">체크 리스트</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main class="memberFormContainer">
+    <form action="signUp.do" method="POST" name="signUp" class="memberForm">
+      <fieldset>
+        <legend>회원가입 폼</legend>
+        <div class="memberFormHeadContainer">
+          <h2 class="memberFormHeadline" lang="en">SIGN UP</h2>
+          <p class="memberFormText"><span lang="en">cafe W</span>에 가입하세요. 좋은 서비스로 보답하겠습니다.</p>
+        </div>
+        <div class="memberList necessaryList">
+          <label for="user_email">아이디</label>
+          <input class="userEmail" type="email" id="user_email" name="userEmail"
+            placeholder="등록할 사용자 계정을 입력합니다.(예:seulbinim@gmail.com)" required>
+          <span></span>
+        </div>
+        <div class="memberList necessaryList">
+          <label for="user_Password">패스워드</label>
+          <input class="userPassword" type="password" id="user_Password" name="userPassword"
+            placeholder="비밀번호를 등록합니다.(특수문자 및 숫자 대,소문자 포함 8자리 이상)" required
+            pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$">
+        </div>
+        <div class="memberList necessaryList">
+          <label for="user_password_check">패스워드 확인</label>
+          <input class="userPasswordCheck" type="password" id="user_password_check" name="userPasswordCheck"
+            placeholder="등록한 사용자 계정 비밀번호와 동일해야 합니다." required
+            pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$">
+        </div>
+        <div class="memberList necessaryList userNameContainer">
+          <label for="user_name">이름</label>
+          <input class="userName" type="text" id="user_name" name="userName" placeholder="예) 김데레사" required>
+        </div>
+        <div class="memberList userGender">
+          <p class="userGenderBrief">성별</p>
+          <input class="userFemale radioOn" type="radio" id="user_female" name="userGender" required checked
+            onclick="radioCheck(this)">
+          <span class="radioImage femaleRadio"></span>
+          <label for="user_female">여성</label>
+          <input class="userMale" type="radio" id="user_male" name="userGender" required onclick="radioCheck(this)">
+          <span class="radioImage maleRadio"></span>
+          <label for="user_male">남성</label>
+        </div>
+        <div class="memberList necessaryList">
+          <label for="user_year">생년월일</label>
+          <select size="1" class="userYear" name="userYear" id="user_year" required>
+            <option value="">년도</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+          </select>
+          <label for="user_month" class="a11y-hidden">생년월일</label>
+          <select size="1" class="userMonth" name="userMonth" id="user_month" required>
+            <option value="">월</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <label for="user_day" class="a11y-hidden">생년월일</label>
+          <select size="1" class="userDay" name="userDay" id="user_day" required>
+            <option value="">일</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <label for="user_calendar" class="a11y-hidden">생년월일</label>
+          <select size="1" class="userCalendar" name="userCalendar" id="user_calendar" required>
+            <option disabled value="">양/음력</option>
+            <option selected value="양력">양력</option>
+            <option value="음력">음력</option>
+          </select>
+        </div>
+        <div class="memberList necessaryList">
+          <label for="user_number">전화번호</label>
+          <input class="userNumber" type="tel" id="user_number" name="userNumber"
+            placeholder="사용 중인 전화번호를 입력하세요.(하이픈 제외 숫자만 입력)" required>
+        </div>
+        <div class="memberList necessaryList">
+          <label id="user_certification">인증방식</label>
+          <ul class="memberCertification" aria-labelledby="user_certification">
+            <li class="certificationMobile">
+              <p class="mobileTitle">휴대폰 인증</p>
+              <p class="mobileText">본인 명의 휴대폰으로 인증 절차를 수행합니다.</p>
+              <img src="../images/Phone.svg" alt="휴대폰 아이콘">
+              <a href="#" class="certificationBtn" target="_blank">인증</a>
+            </li>
+            <li class="certificationIpin">
+              <p class="ipinTitle">아이핀(i-PIN) 인증</p>
+              <p class="ipinText">가입한 아이핀 ID를 사용해 인증 절차를 수행합니다.</p>
+              <img src="../images/Desktop.svg" alt="아이핀(i-PIN) 아이콘">
+              <a href="#" class="certificationBtn" target="_blank">인증</a>
+            </li>
+          </ul>
+        </div>
+        <div class="memberList">
+          <label for="user_nickname">닉네임</label>
+          <input class="userNickname" type="text" id="user_nickname" name="userNickname" maxlength="6"
+            placeholder="예) 슬비(명사로 이루어진 한글 6자리 이내)">
+        </div>
+        <div class="memberList userGuideContainer">
+          <label for="user_guide">선택적 개인정보 수집동의 및 이용약관</label>
+          <input class="userGuide" type="checkbox" id="user_guide" name="userGuide" onclick="guideCheck()">
+          <div class="textareaContainer">
+            <label class="a11y-hidden" for="userGuideText">선택적 개인정보 수집동의 및 이용약관 내용</label>
+            <textarea id="userGuideText" aria-labelledby="user_guide" readonly class="userGuideText">
+              본인은 Cafe W(이하 “회사”라 합니다)가 제공하는 콜 마이 네임 서비스 (이하 “
+              서비스”라 합니다)를 이용하기 위해, 다음과 같이 “회사”가 본인의 개인정보를 수
+              집·이용하는 것에 동의합니다.
+
+              ※ 귀하께서는 개인정보 수집·이용에 대한 동의를 거부하실 수 있으나, 동의를 거
+              부하실 경우 서비스 이용을 하실 수 없습니다.
+              
+              1. 개인정보 항목·목적·보유기간
+              
+              2. 관계법령에 의한 개인정보 보존기간
+              - 서비스이용기록, 접속로그, 접속IP정보 (통신비밀보호법 : 3개월)
+              - 표시/광고에 관한 기록 (전자상거래법 : 6개월)
+              - 계약 또는 청약철회 등에 관한 기록 (전자상거래법 : 5년)
+              - 대금결제 및 재화 등의 공급에 관한 기록 (전자상거래법 : 5년)
+              - 소비자의 불만 또는 분쟁처리에 관한 기록 (전자상거래법 : 3년)
+              
+              3. 서비스 이용과정 및 사업 처리과정에서 수집될 수 있는 개인정보의 범위
+              서비스 이용기록, 접속 로그, 쿠키, 접속 IP 정보, 결제기록
+              
+              * 쿠키의 경우 구체적인 운영 내역과 설정 거부 방법 등은 본 홈페이지 개인정보
+              처리방침 “개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항”에서 확
+              인하실 수 있습니다.
+            </textarea>
+          </div>
+        </div>
+        <p class="memberFormText2">회원 가입 완료 후, Cafe W 카드를 등록하시면 무료음료 쿠폰이 발행됩니다.</p>
+        <p class="memberFormText3">선택항목은 입력하지 않거나 동의하지 않아도 회원 가입이 가능합니다.</p>
+        <input class="memberFormSubmit" type="submit" value="회원가입">
+      </fieldset>
+    </form>
+  </main>
+  <footer class="footer">
+    <img src="../images/Cafe-W-(Vertical).svg" alt="CAFE W 로고 이미지" title="CAFE W 로고 이미지">
+    <ul class="footerList">
+      <li><a href="#">개인정보 처리방침</a></li>
+      <li><a href="#">멤버스 이용약관</a></li>
+      <li><a href="#">가맹 안내</a></li>
+      <li><a href="#">대량 쿠폰판매</a></li>
+      <li><a href="#">채용 안내</a></li>
+      <li><a href="#">고객의 소리</a></li>
+      <li><a href="#">사이트맵</a></li>
+    </ul>
+    <address class="address">
+      <span>서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)</span>
+      <span aria-hidden="true">ㅣ</span>
+      <span>연락처 : 02-6951-2121</span>
+      <span>사업자 등록번호 : 107-86-16302</span>
+      <span aria-hidden="true">ㅣ</span>
+      <span>통신판매업 신고 : 강남 제 002519호</span>
+      <span aria-hidden="true">ㅣ</span>
+      <span>대표이사 : 김데레사</span>
+    </address>
+    <small class="copyright">© 2020 CAFE W COMPANY. ALL rights reserved.</small>
+  </footer>
+  <div class="upButtonWrapper">
+    <button class="upButton" id="up">위로 가기</button>
+  </div>
+</body>
+
+</html>

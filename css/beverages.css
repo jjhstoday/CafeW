@@ -1,0 +1,142 @@
+/* 음료 목록 */
+.beverages {
+    background: #F3D6B0;
+    padding: 83px 0 123px 119px;
+    position: relative;
+    min-width: 1440px;
+}
+
+.beveragesBrief {
+    width: 402px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #9f7054;
+}
+
+.beveragesBrief .whiteSpace:first-child {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.beveragesBrief .whiteSpace:first-child::before,
+.beveragesBrief .whiteSpace:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 160px;
+    border-bottom: 2px solid #9f7054;
+    transform: translateY(-4px);
+}
+
+.beveragesBrief em {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9rem;
+    line-height: 0.9;
+    letter-spacing: 0.1em;
+    color: #c75842;
+}
+
+.beveragesBrief span[lang="ko"] {
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: initial;
+}
+
+.beveragesBrief::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #9f7054;
+    margin-top: 20px;
+}
+
+.beveragesList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.beveragesList .listItem {
+    margin: 0;
+    padding: 0;
+}
+
+.beveragesList .listItem img {
+    position: absolute;
+}
+
+.beveragesList .listItem figcaption {
+    position: absolute;
+}
+
+.strawberryFrappuccino img {
+    display: inline-block;
+    width: 283px;
+    left: 33.4%;
+    top: 173px;
+}
+
+.chouxCreamLatte img {
+    display: inline-block;
+    width: 283px;
+    left: 53.4%;
+    top: 122px;
+}
+
+.springPeachGreenTea img {
+    display: inline-block;
+    width: 223px;
+    left: 73.05%;
+    top: 302px;
+}
+
+.beveragesList .listItem figure {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #412311;
+}
+
+.beveragesList .listItem figure span[lang="ko"] {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.1rem;
+    color: rgba(95, 76, 76, 0.9);
+    letter-spacing: initial;
+}
+
+.strawberryFrappuccino figcaption {
+    top: 532px;
+    left: 32.77%;
+}
+
+.chouxCreamLatte figcaption {
+    top: 118px;
+    left: 51.51%;
+}
+
+.springPeachGreenTea figcaption {
+    top: 232px;
+    left: 75.05%;
+}
+
+.beveragesMore {
+    display: block;
+    width: 128px;
+    height: 36px;
+    border: 2px solid #ba1f00;
+    border-radius: 3px;
+    padding: 8px 0;
+    text-align: center;
+    color: #ba1f00;
+    font-style: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-left: 137px;
+}
