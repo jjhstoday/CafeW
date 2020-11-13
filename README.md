@@ -3,8 +3,10 @@
 최신 표준 HTML5의 Sementic한 태그를 활용하여 접근성을 고려한 고정형 웹 사이트입니다.
 
 <img src="https://user-images.githubusercontent.com/71176945/99017572-93841e80-259b-11eb-9d4f-8a66daca916c.PNG" alt="Cafe W 메인페이지">
-<img src="https://user-images.githubusercontent.com/71176945/99017574-94b54b80-259b-11eb-955e-8911d27b4764.PNG" alt="Cafe W 로그인 페이지" width="410" style="display: inline-block;">
-<img src="https://user-images.githubusercontent.com/71176945/99017576-954de200-259b-11eb-9337-f90e0ef9e262.PNG" alt="Cafe W 회원가입 페이지" width="410" style="display: inline-block;">
+<div>
+  <img src="https://user-images.githubusercontent.com/71176945/99017574-94b54b80-259b-11eb-955e-8911d27b4764.PNG" alt="Cafe W 로그인 페이지" width="410">
+  <img src="https://user-images.githubusercontent.com/71176945/99017576-954de200-259b-11eb-9337-f90e0ef9e262.PNG" alt="Cafe W 회원가입 페이지" width="410">
+</div>
 
 ## UI 디자인
 
