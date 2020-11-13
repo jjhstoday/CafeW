@@ -3,8 +3,8 @@
 최신 표준 HTML5의 Sementic한 태그를 활용하여 접근성을 고려한 고정형 웹 사이트입니다.
 
 <img src="https://user-images.githubusercontent.com/71176945/99017572-93841e80-259b-11eb-9d4f-8a66daca916c.PNG" alt="Cafe W 메인페이지">
-<img src="https://user-images.githubusercontent.com/71176945/99017574-94b54b80-259b-11eb-955e-8911d27b4764.PNG" alt="Cafe W 로그인 페이지" width="415">
-<img src="https://user-images.githubusercontent.com/71176945/99017576-954de200-259b-11eb-9337-f90e0ef9e262.PNG" alt="Cafe W 회원가입 페이지" width="415">
+<img src="https://user-images.githubusercontent.com/71176945/99017574-94b54b80-259b-11eb-955e-8911d27b4764.PNG" alt="Cafe W 로그인 페이지" width="410">
+<img src="https://user-images.githubusercontent.com/71176945/99017576-954de200-259b-11eb-9337-f90e0ef9e262.PNG" alt="Cafe W 회원가입 페이지" width="410">
 
 ## UI 디자인
 
@@ -12,8 +12,8 @@
 
 - 데스크탑에 최적화 된 UI (디자인 시안 1440px 기준)
 
-<img src="https://user-images.githubusercontent.com/71176945/99018544-b0215600-259d-11eb-81ba-d5f2c1d15044.png" alt="Cafe W 디자인 시스템" width="415">
-<img src="https://user-images.githubusercontent.com/71176945/99018745-2f168e80-259e-11eb-8c46-9748839ca2dd.png" alt="Cafe W 디자인 시스템" width="415">
+<img src="https://user-images.githubusercontent.com/71176945/99018544-b0215600-259d-11eb-81ba-d5f2c1d15044.png" alt="Cafe W 디자인 시스템" width="410">
+<img src="https://user-images.githubusercontent.com/71176945/99018745-2f168e80-259e-11eb-8c46-9748839ca2dd.png" alt="Cafe W 디자인 시스템" width="410">
 
 ## UI 개발
 
@@ -34,6 +34,6 @@
 <img src="https://user-images.githubusercontent.com/71176945/99019645-18713700-25a0-11eb-918a-a2db3252acb3.PNG" alt="가독성을 위한 CSS 주석처리">
 
 ### pullRequest를 통한 팀과의 협업(피드백 및 답변)
-<img src="https://user-images.githubusercontent.com/71176945/99019879-b2d17a80-25a0-11eb-990e-d4bafc00b4e7.PNG" alt="pullRequest를 통한 피드백" width="415">
-<img src="https://user-images.githubusercontent.com/71176945/99019902-c381f080-25a0-11eb-9c45-b2581f1f11c7.PNG" alt="pullRequest피드백에 대한 답변" width="415">
+<img src="https://user-images.githubusercontent.com/71176945/99019879-b2d17a80-25a0-11eb-990e-d4bafc00b4e7.PNG" alt="pullRequest를 통한 피드백" width="410">
+<img src="https://user-images.githubusercontent.com/71176945/99019902-c381f080-25a0-11eb-9c45-b2581f1f11c7.PNG" alt="pullRequest피드백에 대한 답변" width="410">
 
