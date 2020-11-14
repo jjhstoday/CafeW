@@ -47,3 +47,7 @@
 - 김태윤 (UI개발) [@Kimtaeyoon-developer](https://github.com/Kimtaeyoon-developer)
 - 류하준 (UI개발 및 github관리) [@HaJunRyu](https://github.com/HaJunRyu)
 - 장지혜 (UI개발) [@jjhstoday](https://github.com/jjhstoday)
+
+## GitHub-pages 호스팅
+
+### [CafeW index.html](hajunryu.github.io/cafew/)
