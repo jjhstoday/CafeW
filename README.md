@@ -50,4 +50,4 @@
 
 ## GitHub-pages 호스팅
 
-### [CafeW index.html](hajunryu.github.io/cafew/)
+### [CafeW index.html](https://hajunryu.github.io/CafeW/)
