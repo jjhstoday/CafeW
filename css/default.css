@@ -8,14 +8,17 @@ body *::after {
   box-sizing: border-box;
 }
 
+/* rem단위를 용이하게 사용하기 위함 */
 html {
   font-size: 10px;
 }
 
+/* body의 아주 기본적인 속성 초기화 */
 body {
   padding: 0;
   margin: 0;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
+  /* rem단위를 사용하지만 body의 기본 폰트는 16px */
   font-size: 1.6rem;
 }
 
@@ -37,11 +40,13 @@ fieldset {
   padding: 0;
 }
 
-.button {
+/* 모든 버튼 요소들의 cursor를 pointer처리 해주며 border를 없애줌 */
+button {
   cursor: pointer;
   border: none;
 }
 
+/* button이 disable일때는 cursor를 사용할 수 없는 요소로 표시 */
 button[disabled] {
   cursor: not-allowed;
 }

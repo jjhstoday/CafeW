@@ -25,6 +25,927 @@
   outline: none;
 }
 
+/* section1 (beverages) */
+.beverages {
+  background: #F3D6B0;
+  padding: 83px 0 123px 119px;
+  position: relative;
+  min-width: 1440px;
+}
+
+.beveragesBrief {
+  width: 402px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #9f7054;
+}
+
+.beveragesBrief .whiteSpace:first-child {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.beveragesBrief .whiteSpace:first-child::before,
+.beveragesBrief .whiteSpace:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 160px;
+  border-bottom: 2px solid #9f7054;
+  transform: translateY(-4px);
+}
+
+.beveragesBrief em {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9rem;
+  line-height: 0.9;
+  letter-spacing: 0.1em;
+  color: #c75842;
+}
+
+.beveragesBrief span[lang="ko"] {
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: initial;
+}
+
+.beveragesBrief::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #9f7054;
+  margin-top: 20px;
+}
+
+.beveragesList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.beveragesList .listItem {
+  margin: 0;
+  padding: 0;
+}
+
+.beveragesList .listItem img {
+  position: absolute;
+}
+
+.beveragesList .listItem figcaption {
+  position: absolute;
+}
+
+.strawberryFrappuccino img {
+  display: inline-block;
+  width: 283px;
+  left: 33.4%;
+  top: 173px;
+}
+
+.chouxCreamLatte img {
+  display: inline-block;
+  width: 283px;
+  left: 53.4%;
+  top: 122px;
+}
+
+.springPeachGreenTea img {
+  display: inline-block;
+  width: 223px;
+  left: 73.05%;
+  top: 302px;
+}
+
+.beveragesList .listItem figure {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #412311;
+}
+
+.beveragesList .listItem figure span[lang="ko"] {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1rem;
+  color: rgba(95, 76, 76, 0.9);
+  letter-spacing: initial;
+}
+
+.strawberryFrappuccino figcaption {
+  top: 532px;
+  left: 32.77%;
+}
+
+.chouxCreamLatte figcaption {
+  top: 118px;
+  left: 51.51%;
+}
+
+.springPeachGreenTea figcaption {
+  top: 232px;
+  left: 75.05%;
+}
+
+.beveragesMore {
+  display: block;
+  width: 128px;
+  height: 36px;
+  border: 2px solid #ba1f00;
+  border-radius: 3px;
+  padding: 8px 0;
+  text-align: center;
+  color: #ba1f00;
+  font-style: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 137px;
+}
+
+/* section2 (recommendlecture) */
+.recommendLecture {
+  min-width: 1440px;
+  height: 624px;
+  position: relative;
+}
+
+/* 멀티캠퍼스강좌 섹션 */
+.multiRecommend {
+  position: relative;
+}
+
+.multiRecommendHeading {
+  display: inline-block;
+  width: 58%;
+  height: 64px;
+  margin: 0;
+}
+
+.multiRecommendHeading button {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  background: url(../images/ChevronUp.svg) no-repeat 95% 50%;
+  padding-right: 7.6%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: none;
+  color: #282725;
+}
+
+.multiRecommendHeading button span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #282725;
+}
+
+/* 멀티캠퍼스 강좌 종류 */
+.itemList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+  padding: 40px 40px 0;
+  margin: 0;
+}
+
+.listHeading {
+  display: inline-block;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fffcf9;
+  margin: 0;
+  line-height: 1;
+}
+
+.itemList li {
+  width: 590px;
+  height: 424px;
+  background: url(../images/html-css.png) no-repeat #282725;
+  background-size: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column nowrap;
+  border-radius: 6px;
+  margin-right: 0;
+}
+
+.itemList li:nth-child(2) {
+  background: url(../images/web-design.png) no-repeat #282725;
+  margin-left: 21px;
+}
+
+.itemList li p {
+  margin: 0 0 30px;
+  color: #fffcf9;
+}
+
+.informationButton {
+  width: 113px;
+  height: 36px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  border: 2px solid #fffcf9;
+  background: none;
+  color: #fffcf9;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* 입문자 강좌 디테일 */
+.lectureDetail {
+  background-color: rgba(40, 39, 37, 0.95);
+  position: absolute;
+  width: 590px;
+  height: 424px;
+  padding: 35px 36px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  z-index: 10;
+  border-radius: 6px;
+  display: none;
+  text-align: start;
+}
+
+.is__active .lectureDetail {
+  display: block;
+}
+
+.detailHeading {
+  width: 270px;
+  height: 28px;
+  margin: 0 0 4px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fffcf9;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.lectureDetail p {
+  margin-bottom: 0;
+  font-size: 2.1rem;
+  height: 5px;
+}
+
+.detailLating {
+  color: #fffcf9;
+  font-size: 2.1rem;
+}
+.detailLating strong {
+  color: rgba(255, 252, 249, 1);
+}
+
+.detailLating span {
+  color: rgba(255, 252, 249, 0.4);
+  margin-right: 8px;
+}
+
+.detailInformation {
+  width: 518px;
+  height: 218px;
+  margin: 35px 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  padding-left: 5px;
+  border-top: 1px solid #fffcf9;
+  border-bottom: 1px solid #fffcf9;
+
+}
+.detailInformation div {
+  width: 50%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fffcf9;
+}
+.detailInformation dt{
+  width: 76px;
+  margin-right: 13px;
+}
+
+.detailInformation div:last-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 0;
+}
+
+.detailInformation dt,
+.detailInformation dd {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.3rem;
+  margin: 11px 0;
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+  padding-top: 40px;
+  overflow: hidden;
+  background: url(../images/Close.svg) 0 0 no-repeat;
+  background-position: center;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 27px;
+}
+/* 왼쪽, 오른쪽 버튼*/
+.left {
+  left: 40px;
+  background: url(../images/ChevronLeft.svg) no-repeat 50%;
+}
+
+.right {
+  right: 40px;
+  background: url(../images/ChevronRight.svg) no-repeat 50%;
+}
+
+.left,
+.right {
+  width: 40px;
+  height: 424px;
+  padding-top: 424px;
+  overflow: hidden;
+  border: none;
+  color: #282725;
+
+}
+
+/* 사진 재생 버튼 */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96px;
+  background: #fffcf9;
+}
+
+.pauseButton {
+  padding: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-indent: -70px;
+  overflow: hidden;
+  background: url(../images/Pause.svg) no-repeat 50%;
+  margin-left: 5px;
+}
+
+.nextButton {
+  display: inline;
+  width: 117px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+.indicatorActiveButton {
+  padding: 0;
+  width: 38px;
+  height: 14px;
+  background: url(../images/indicator-active.svg) no-repeat 50%;
+  margin-right: 6px;
+}
+
+.indicatorButton {
+  padding: 0;
+  margin-right: 6px;
+  width: 14px;
+  height: 14px;
+  background: url(../images/indicator.svg) no-repeat 50%;
+}
+
+.indicatorActiveButton,
+.indicatorButton {
+  text-indent: -200px;
+  overflow: hidden;
+}
+
+.pauseButton,
+.indicatorActiveButton,
+.indicatorButton {
+  border: none;
+}
+
+/* 이듬 러닝 강좌 종류 */
+.blendedRunning {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.blendedRunningHeading {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 608px;
+  height: 64px;
+  margin: 0;
+}
+
+.blendedRunningHeading button {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  background: url(../images/ChevronDown.svg) no-repeat 464px 50% #282725;
+  padding-right: 163px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: none;
+  color: #fffcf9;
+}
+
+.blendedRunningHeading span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fffcf9;
+}
+
+.blendedRunning .cover {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.itemList1 {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+  padding: 40px 40px 0;
+  margin: 0;
+  background: #282725;
+}
+
+.listHeading1 {
+  display: inline-block;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #282725;
+  margin: 0;
+  line-height: 1;
+}
+
+.itemList1 li {
+  width: 387px;
+  height: 424px;
+  background: url(../images/html-css.png) no-repeat #fffcf9;
+  background-size: 100% 50%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column nowrap;
+  border-radius: 6px;
+}
+
+.itemList1 li:nth-child(2) {
+  background: url(../images/web-design.png) no-repeat #fffcf9;
+  margin-left: 20px;
+}
+
+.itemList1 li:nth-child(3) {
+  background: url(../images/reactPhoto.png) no-repeat #fffcf9;
+  margin-left: 20px;
+}
+.itemList1 li p {
+  margin: 0 0 30px;
+  color: #282725;
+}
+
+.informationButton1 {
+  width: 113px;
+  height: 36px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  border: 2px solid #282725;
+  background: none;
+  color: #282725;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6;
+  cursor: pointer;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* 사진재생 버튼 */
+.buttons1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96px;
+  background: #282725;
+}
+
+.playButton {
+  padding: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-indent: -70px;
+  overflow: hidden;
+  background: url(../images/Play.svg) no-repeat 50%;
+  margin-left: 5px;
+}
+
+.nextButton {
+  display: inline;
+  width: 117px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+.indicatorActiveWhiteButton {
+  padding: 0;
+  width: 38px;
+  height: 14px;
+  background: url(../images/indicator-active-white.svg) no-repeat 50%;
+  margin-right: 6px;
+}
+
+.indicatorButton {
+  padding: 0;
+  margin-right: 6px;
+  width: 14px;
+  height: 14px;
+  background: #FFFCF9 url(../images/indicator.svg) no-repeat 50%;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.indicatorActiveWhiteButton,
+.indicatorButton {
+  text-indent: -200px;
+  overflow: hidden;
+}
+
+.playButton,
+.indicatorActiveWhiteButton,
+.indicatorButton {
+  border: none;
+}
+/* 왼쪽 오른쪽 버튼 */
+.left1 {
+  left: 40px;
+  background: url(../images/ChevronLeft1.svg) no-repeat 50%;
+}
+
+.right1 {
+  right: 40px;
+  background: url(../images/ChevronRight1.svg) no-repeat 50%;
+}
+
+.left1,
+.right1 {
+  width: 40px;
+  height: 424px;
+  padding-top: 424px;
+  overflow: hidden;
+  border: none;
+}
+
+/* multirecommend와 blenderunning 겹치기*/
+.recommendLecture .cover{
+  display: none;
+}
+.isActive .cover{
+  display: block;
+}
+.blendedRunning{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* 좌우 버튼 공통코드 */
+.left,
+.right,
+.left1,
+.right1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+/*  section3 (lectuInfo) */
+.lectureInfo {
+  background-color: #7D6F5D;
+  min-width: 1440px;
+  height: 460px;
+}
+
+/* section 전체 묶음 */
+.sectionBundle {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 1222px;
+  margin: 0 auto;
+}
+
+/* margin 병합으로 인해 박스에 마진을 넣었음 */
+.review,
+.lectureBrochureContainer {
+  margin: 30px 10px;
+}
+
+/* section 3-1 리뷰 */
+.review {
+  background: #282725 url(../images/Score.svg) no-repeat 95% 0;
+  width: 743px;
+  height: 400px;
+  position: relative;
+  padding: 60px 0 0 90px;
+}
+
+/* 헤딩제목위 선 */
+.review:before {
+  content: "";
+  border: 1px solid #7D6F5D;
+  width: 40px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.reviewHead {
+  display: inline-block;
+  font-size: 2.4rem;
+  color: #FFFCF9;
+  margin: 0 0 10px 0;
+}
+
+.explanation {
+  height: 75px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+  line-height: 1.8;
+  color: #FFFCF9;
+  position: relative;
+}
+
+.explanation footer {
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #FFFCF9;
+}
+
+.reviewRating .reviewGrade {
+  font-size: 2.2rem;
+  color: #FFFCF9;
+  margin: 19px 0 0;
+}
+
+.reviewGrade span {
+  font-size: 2.8rem;
+  color: #FFFCF9;
+}
+
+.reviewGrade span:nth-child(2) {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-left: 15px;
+}
+
+/* 재생버튼 */
+.review button {
+  position: absolute;
+  background: url(../images/Play.svg) no-repeat 50%;
+  width: 40px;
+  height: 40px;
+  padding-top: 40px;
+  margin: 20px 20px;
+  overflow: hidden;
+  border: none;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+/* section 3-2, 3-3 묶은 디비젼 */
+.lectureBrochureContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 400px;
+  width: 459px;
+}
+
+/* section 3-2 인기강좌 */
+.favoriteLecture {
+  position: relative;
+  background-color: #FFFCF9;
+  height: 220px;
+}
+
+.lectureHeading {
+  margin: 0;
+  padding: 30px 0 0 24px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #7D6F5D;
+}
+
+.lectureHeading span {
+  font-size: 2.6rem;
+}
+
+.lectureList {
+  padding: 0 35px 0 50px;
+  color: #7D6F5D;
+}
+
+.lectureList li {
+  position: relative;
+  margin-top: 10px;
+}
+
+.lectureList li a {
+  display: block;
+  width: 290px;
+  margin-right: 20px;
+}
+
+/* section 3-2 순위 변동 이미지 */
+.lectureList li em {
+  position: absolute;
+  right: -5px;
+  top: 0;
+  width: 28px;
+  height: 0;
+  padding-top: 29px;
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.up {
+  background: url(../images/increase.svg) no-repeat 50%;
+}
+
+.new {
+  background: url(../images/new.svg) no-repeat 50%;
+}
+
+.down {
+  background: url(../images/decrease.svg) no-repeat 50%;
+}
+
+.noChange {
+  background: url(../images/same.svg) no-repeat 50%;
+}
+
+/* section 3-2 더보기 */
+.favoriteLecture>a {
+  position: absolute;
+  top: 34px;
+  right: 25px;
+}
+
+.favoriteLecture>a img {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #E27762;
+  padding: 1px;
+}
+
+/* section 3-3 다운로드 */
+.brochure {
+  background-color: #c75842;
+  position: relative;
+  height: 160px;
+}
+
+.brochureHeading {
+  display: inline-block;
+  margin: 0;
+}
+
+.brochureHeading a {
+  display: inline-block;
+  margin: 25px;
+  color: #FFFFFF;
+  width: 132px;
+  height: 68px;
+  font-size: 3.1rem;
+  text-align: center;
+}
+
+.brochure img {
+  position: absolute;
+  right: 0;
+  top: -43px;
+}
+
+.brochure>a {
+  display: inline-block;
+  background: url(../images/Up-Arrow-button.svg) no-repeat 0 0 / 120%;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  width: 33px;
+  height: 22px;
+  padding-top: 33px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+/* 유튜브 영상 섹션 (section 4) */
+.cafewYoutube {
+  min-width: 1440px;
+  padding: 25px 0;
+  background: #282725;
+  background-image: url(../images/star-W-logo.svg),
+                    url(../images/star-W-logo.svg);
+  background-repeat: no-repeat; 
+  background-position: 5.902778% 50%, 94.097222% 50%;
+}
+
+.iframeContainer {
+  width: 960px;
+  height: 540px;
+  margin: 0 auto;
+}
+
+.iframeContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* .reserveMagazine영역 (section5) */
+.reserveMagazine {
+  min-height: 438px;
+  min-width: 1440px;
+  background: url(../images/star-W-logo-brown.svg) no-repeat 8.61% 120px,
+      url(../images/reserve-background.jpg) no-repeat 0 0 / 100% auto;
+  padding: 90px 0 0 15.55%;
+}
+
+/* 구문 공통 코드 */
+.reserveBrief {
+  margin: 0;
+  color: #A37356;
+}
+
+.reserveBrief[lang="en"] {
+  font-size: 1.8rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+.reserveBrief[lang="en"] .whiteSpace {
+  font-weight: 400;
+  font-size: 2.6rem;
+  letter-spacing: 0.05em;
+}
+
+.reserveBrief[lang="ko"] {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin: 20px 0;
+}
+
+/* 자세히보기 */
+.reserveMagazineMore {
+  display: inline-block;
+  padding: 8px;
+  width: 128px;
+  height: 36px;
+  border: 2px solid #A37356;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  color: #A37356;
+}
+
+
 /* favoriteMenu 영역 (section6) */
 .favoriteMenu {
   background-image: linear-gradient(105.54deg, rgba(32, 23, 1, 0.5) 36.2%, rgba(95, 57, 35, 0.2) 74.71%), url(../images/favoriteMenu-background.png);
@@ -148,6 +1069,297 @@
   animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
+}
+
+/* section7 coffeeLab*/
+/* 이미지 hover시 하단 흰색 바 애니메이션 */
+@keyframes barAnimation{
+  0% {
+    width: 0;
+  }
+  100%{
+    width: 180px;
+  }
+}
+
+.coffeeLab {
+  min-width: 1440px;
+  height: 1192px;
+  background: #FFFCF9;
+  position: relative;
+}
+
+.coffeeLab p[lang="en"] {
+  font-weight: 300;
+  font-size: 4.6rem;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 80px 0 12px 0;
+}
+
+.coffeeLab p[lang="en"] span {
+  font-weight: 700;
+}
+
+.coffeeLab p[lang="ko"] {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin: 0;
+}
+
+.coffeeLab p[lang="ko"] span {
+  font-weight: 700;
+}
+
+.coffeeLab p[lang="ko"]::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #7D6F5D;
+  margin: 55px auto 0;
+  width: 70px;
+}
+
+.labList {
+  list-style: none;
+}
+
+.labList li {
+  position: absolute;
+  width: 692px;
+  height: 692px;
+  transition: .5s;
+}
+
+.labList .labMenu {
+  top: 287px;
+  left: 120px;
+  background: url(../images/lab-menu-background.png) no-repeat 0 0 / 100% 100%;
+  z-index: 5;
+}
+
+.labList .labBarista {
+  top: 420px;
+  left: 628px;
+  background: url(../images/lab-barista-background.png) no-repeat 0 0 / 100% 100%;
+}
+
+.labList li:hover {
+  background-size: 105% 105%;
+}
+
+.labList li:hover a::after {
+  animation: barAnimation .5s;
+}
+
+.coffeeLab a::after {
+  content: "";
+  display: block;
+  border-bottom: 10px solid #FFFCF9;
+  margin-top: 30px;
+  width: 180px;
+  margin: 30px auto;
+}
+
+.coffeeLab a {
+  display: block;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFCF9;
+  margin: 497px auto 0;
+}
+
+/* 이듬 러닝 커리큘럼 영역 (section8) */
+.curriculum {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(68, 56, 45, 0) 0%, rgba(104, 41, 12, 0.4) 100%), url(../images/curriculum-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 30% bottom;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  min-width: 1440px;
+  height: 540px;
+  padding: 120px 0;
+  position: relative;
+}
+
+.curContainer {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.curBack,
+.curFront {
+  position: absolute;
+  background: #FFFCF9;
+  box-shadow: 0px 0px 15px rgba(103, 48, 25, 0.3);
+  border-radius: 50%;
+  backface-visibility: hidden;
+  transition: all 1s ease;
+}
+
+.curBack {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 80px 0 50px 0;
+  color: #7D6F5D;
+  transform: rotateY(180deg);
+}
+
+.curFront {
+  top: 60px;
+  left: 60px;
+  width: 180px;
+  height: 180px;
+  padding: 29px 45px;
+  transform: rotateY(0deg);
+}
+
+.curTitle {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 0.9;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.curBrief {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.curBrief em {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.curPlus {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 700;
+  padding: 10px 25px;
+  border: 2px solid #7D6F5D;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* 커리큘럼 데코레이션 */
+.curBack::after {
+  content: "";
+  display: inline-block;
+  width: 148px;
+  height: 106px;
+  background: url(../images/W-logo-brown.png) no-repeat 0 0 / 100% 100%;
+  opacity: 0.2;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* :hover 값 설정 영역 */
+.curContainer:hover .curBack {
+  transform: rotateY(0deg);
+}
+
+.curContainer:hover .curFront {
+  transform: rotateY(180deg);
+}
+
+/* 매장찾기 영역(section9) */
+.cafewStore {
+  min-width: 1440px;
+  background: radial-gradient(65.6% 264.49% at 59.55% 37.62%, rgba(40, 39, 37, 0.95) 0%, #282725 73.46%, #171615 100%);
+  color: #FFFCF9;
+  position: relative;
+  padding-top: 80px;
+}
+
+.storeContainer::after {
+  content: "";
+  display: inline-block;
+  width: 152px;
+  height: 127px;
+  background: url(../images/cafewStore-storeicon.png) no-repeat 0 0 / 100% 100%;
+  position: absolute;
+  left: 65.138889%;
+  bottom: 0;
+}
+
+.storeContainer {
+  display: inline-block;
+  margin-bottom: 127px;
+  padding-left: 53.75%;
+}
+
+.storeHeadline {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.storeBrief {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.storeList {
+  margin-bottom: 42px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.storeList em {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.storePlus {
+  padding: 12px 25px;
+  font-size: 1.6rem;
+  border: 1px solid #FFFCF9;
+  border-radius: 3px;
+  margin-bottom: 115px;
+}
+
+.cafewStore::before,
+.cafewStore::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.6));
+}
+
+.cafewStore::before {
+  background: url(../images/cafewStore-background01.png) no-repeat 50% 50% / cover;
+  width: 360px;
+  height: 360px;
+  left: 174px;
+  top: -50px;
+}
+
+.cafewStore::after {
+  background: url(../images/cafewStore-background02.png) no-repeat 50% 50% / cover;
+  width: 220px;
+  height: 220px;
+  left: 440px;
+  top: 140px;
 }
 
 /* 영업시간 조정 안내 알림창(fixed) */

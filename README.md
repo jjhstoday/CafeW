@@ -43,3 +43,7 @@
   <img src="https://user-images.githubusercontent.com/71176945/99019902-c381f080-25a0-11eb-9c45-b2581f1f11c7.PNG" alt="pullRequest피드백에 대한 답변" width="49.5%">
 </div>
 
+## 팀 프로젝트 구성원
+- 김태윤 (UI개발) @Kimtaeyoon-developer
+- 류하준 (UI개발 및 github관리) @HaJunRyu
+- 장지혜 (UI개발) @jjhstoday
