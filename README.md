@@ -48,6 +48,6 @@
 - 류하준 (UI개발 및 github관리) [@HaJunRyu](https://github.com/HaJunRyu)
 - 장지혜 (UI개발) [@jjhstoday](https://github.com/jjhstoday)
 
-## GitHub-pages 호스팅
+## netlify 호스팅
 
-### [CafeW index.html](https://hajunryu.github.io/CafeW/)
+### [CafeW index.html](https://krj-cafew.netlify.app/)
