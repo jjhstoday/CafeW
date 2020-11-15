@@ -1,9 +1,10 @@
+/* SEO점수 및 접근성을 고려한 요소 숨김처리법 */
 .a11y-hidden,
 legend {
     position: absolute;
     overflow: hidden;
     margin: 0;
-    bottom: 0;
+    padding: 0;
     width: 1px;
     height: 1px;
     clip-path: polygon(0 0, 0 0, 0 0,);
@@ -11,6 +12,7 @@ legend {
     clip: rect(0 0 0 0);
 }
 
+/* 줄바꿈을 위한 클래스 객체화 */
 .whiteSpace {
     display: block;
 }

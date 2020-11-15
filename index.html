@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe W - 봄이 왔다 커피가 설렌다</title>
+    <meta name="description" content="웹 접근성을 고려해 설계하여 만들어진 Cafe W 홈페이지 입니다. Cafe W의 커피와 함께 멀티캠퍼스와 이듬러닝의 원데이 클래스를 살펴보세요 Cafe W는 항상 더 좋은 품질을 위해 쉬지않고 연구하고 있습니다. 언론 속 Cafe W에 대해서도 구경해보세요" />
+    <meta name="keywords" content="Cafe W, CafeW, 커피, 브랜드, 사이트, 홈페이지" />
+    <meta name="author" content="김태윤, 류하준, 장지혜" />
+
+    <link rel="shortcut icon" href="./images/cafeW-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/cafeW-favicon.ico" type="image/x-icon">
+
+    <link rel="preload" as="style" href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" />
+    <link rel="preload" as="style" href="./css/style.css" />
+
+    <!-- 스타일링 -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- 스크립트 -->
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="skipNav" id="skip_nav"><a href="#content">본문 바로가기 →</a></div>
+    <header class="header">
+        <h1 class="pageHeading" aria-label="Cafe W">
+            <a href="index.html">
+                <em class="a11y-hidden">Cafe W</em>
+                <img src="../images/CafeW-logo.svg" alt="cafe W 로고">
+            </a>
+        </h1>
+        <ul class="memberMenu">
+            <li><a href="html/signIn.html">Sign In</a></li>
+            <li><a href="html/signUp.html">Sign Up</a></li>
+        </ul>
+        <form action="#">
+            <fieldset>
+                <legend>검색 영역</legend>
+                <div class="searchFormContainer">
+                    <label class="a11y-hidden" for="search">검색어 입력 서식</label>
+                    <input id="search" title="검색폼" type="text"><button title="검색" aria-label="검색" class="searchButton"
+                        type="submit"></button>
+                </div>
+            </fieldset>
+        </form>
+    </header>
+    <nav class="navigation">
+        <h2 class="a11y-hidden">메인메뉴</h2>
+        <ul class="mainMenu">
+            <li>
+                <h3 class="menuText">Drinks</h3>
+                <ul class="drinksMenuList">
+                    <li><a href="#">콜드 브루</a></li>
+                    <li><a href="#">에스프레소</a></li>
+                    <li><a href="#">기타 제조 음료</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <h3 class="menuText">Foods</h3>
+                <ul class="foodsMenuList">
+                    <li><a href="#">베이커리</a></li>
+                    <li><a href="#">케잌</a></li>
+                    <li><a href="#">샌드위치 & 샐러드</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <h3 class="menuText">Products</h3>
+                <ul class="productsMenuList">
+                    <li><a href="#">머그</a></li>
+                    <li><a href="#">텀블러</a></li>
+                    <li><a href="#">커피용품</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <h3 class="menuText">Lectures</h3>
+                <ul class="lecturesMenuList">
+                    <li><a href="#">UI 구조 & 디자인</a></li>
+                    <li><a href="#">UI 인터렉션 주니어</a></li>
+                    <li><a href="#">리액트 프로그래밍</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <h3 class="menuText">Customer Services</h3>
+                <ul class="customerServicesMenuList">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">추천 채널</a></li>
+                    <li><a href="#">체크 리스트</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="noticeBar" id="notice_bar">
+        <p><a href="#">카페 W 영업시간 조정 안내</a></p>
+        <time datetime="2020-02-19">2020.02.19</time>
+        <button class="closeButton" onclick="noticeNone()">알림창 닫기 버튼</button>
+    </div>
+    <main id="content">
+        <!-- section1 -->
+        <section class="beverages">
+            <h2 class="beveragesHeading a11y-hidden">추천 음료 및 음료 목록</h2>
+            <p class="beveragesBrief">
+                SPRING IS A CUP
+                <span class="whiteSpace">of</span>
+                <em class="whiteSpace">CHOUX</em>
+                <em class="whiteSpace">CREAM</em>
+                <span lang="ko">봄이 왔다 커피가 설렌다</span>
+            </p>
+            <ul class="beveragesList">
+                <li class="listItem strawberryFrappuccino">
+                    <figure>
+                        <img src="../images/strawberry-frappuccino.png" alt="딸기 레이어 슈 크림 프라푸치노">
+                        <figcaption>
+                            STRAWBERRY LAYER
+                            <span class="whiteSpace">CHOUX CREAM FRAPPUCCINO</span>
+                            <span lang="ko">딸기 레이어 슈 크림 프라푸치노</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="listItem chouxCreamLatte">
+                    <figure>
+                        <img src="../images/choux-cream-latte.png" alt="슈 크림 라떼">
+                        <figcaption>
+                            CHOUX CREAM LATTE
+                            <span lang="ko" class="whiteSpace">슈 크림 라떼</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="listItem springPeachGreenTea">
+                    <figure>
+                        <img src="../images/spring-peach-green-tea.png" alt="스프링 피치 그린 티">
+                        <figcaption>
+                            SPRING
+                            <span class="whiteSpace">PEACH GREEN TEA</span>
+                            <span lang="ko">스프링 피치 그린 티</span>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <a class="beveragesMore" href="#">자세히 보기</a>
+        </section>
+        <!-- section2 -->
+        <section class="recommendLecture">
+            <h2 class="a11y-hidden">멀티 캠퍼스, 이듬 블랜디드 러닝 추천 강좌</h2>
+            <section class="multiRecommend isActive">
+                <h3 class="multiRecommendHeading"><button><span>멀티 캠퍼스</span> 추천 강좌</button></h3>
+                <div class="cover">
+                    <ul class="itemList">
+                        <li>
+                            <h4 class="listHeading"><span class="whiteSpace">GIT &amp;</span> HTML&#47;CSS</h4>
+                            <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                            <button class="informationButton" type="button" title="강의 정보" onclick="modalOpen()">강의 정보</button>
+                            <div class="lectureDetail" id="lecture_modal">
+                                <h4 class="detailHeading">GIT &amp; HTML&#47;CSS</h4>
+                                <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                                <span class="detailLating"><strong>★ ★ ★ ★ <span>★</span></strong>4점</span>
+                                <dl class="detailInformation">
+                                    <div>
+                                        <dt>학습시간</dt>
+                                        <dd>09:00 &#126; 17:00 &#40;28시간&#41;</dd>
+                                    </div>
+                                    <div>
+                                        <dt>난이도</dt>
+                                        <dd>초급</dd>
+                                    </div>
+                                    <div>
+                                        <dt>교육비 지원</dt>
+                                        <dd>고용보험 비환급</dd>
+                                    </div>
+                                    <div>
+                                        <dt>평가항목</dt>
+                                        <dd>출석률 100&#37;</dd>
+                                    </div>
+                                    <div>
+                                        <dt>수료기준</dt>
+                                        <dd>총점 80점 이상시 수료</dd>
+                                    </div>
+                                    <div>
+                                        <dt>정원</dt>
+                                        <dd>24명</dd>
+                                    </div>
+                                    <div>
+                                        <dt>교제정보</dt>
+                                        <dd>입문자를 위한 Git과 HTML&amp;CSS <span class="whiteSpace">HTML &amp; CSS 웹사이트 개발과
+                                                디자인 기초 &#40;35,000원&#41;</span>
+                                        </dd>
+                                    </div>
+                                </dl>
+                                <button class="close" type="button" onclick="modalClose()">닫기</button>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="listHeading"><span class="whiteSpace">RESPONSIVE WEB</span> DESIGN STRATEGIES
+                            </h4>
+                            <p>반응형 웹디자인 전략</p>
+                            <button class="informationButton">강의 정보</button>
+                        </li>
+                    </ul>
+                    <button class="left" type="button">왼쪽</button>
+                    <button class="right" type="button">오른쪽</button>
+                    <div class="buttons">
+                        <button class="pauseButton">멈춤</button>
+                        <div class="nextButton">
+                            <button class="indicatorActiveButton">1번 영역</button>
+                            <button class="indicatorButton">2번 영역</button>
+                            <button class="indicatorButton">3번 영역</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blendedRunning">
+                <h3 class="blendedRunningHeading"><button><span>이듬 블랜디드 러닝</span> 추천 강좌</button></h3>
+                <div class="cover">
+                    <ul class="itemList1">
+                        <li>
+                            <h4 class="listHeading1"><span class="whiteSpace">GIT &amp;</span> HTML&#47;CSS</h4>
+                            <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                            <button class="informationButton1">강의 정보</button>
+                        </li>
+                        <li>
+                            <h4 class="listHeading1"><span class="whiteSpace">RESPONSIVE WEB</span> DESIGN STRATEGIES
+                            </h4>
+                            <p>반응형 웹디자인 전략</p>
+                            <button class="informationButton1">강의 정보</button>
+                        </li>
+                        <li>
+                            <h4 class="listHeading1"><span class="whiteSpace">MOBILE WEB UI</span> PRODUCTION LAB</h4>
+                            <p>모바일 웹 UI 제작 실습</p>
+                            <button class="informationButton1">강의 정보</button>
+                        </li>
+                    </ul>
+                    <button class="left1" type="button">왼쪽</button>
+                    <button class="right1" type="button">오른쪽</button>
+                    <div class="buttons1">
+                        <button class="playButton">재생</button>
+                        <div class="nextButton">
+                            <button class="indicatorActiveWhiteButton">다음</button>
+                            <button class="indicatorButton">다음</button>
+                            <button class="indicatorButton">다음</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- section3 -->
+        <section class="lectureInfo">
+            <h2 class="a11y-hidden">카페W 강좌 리뷰, 인기순위, 책자 다운로드</h2>
+            <div class="sectionBundle">
+                <section class="review">
+                    <h3 class="reviewHead">무엇이 중요한지 알게된 시간!</h3>
+                    <blockquote class="explanation">
+                        <span class="whiteSpace">제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았</span>
+                        <span class="whiteSpace">습니다. 많은 튜토리얼들이 디자인을 어떻게구현하는지에만
+                            초점이 맞춰져 있잖아요.</span> 무엇이 중요한지 알게되어 많은 도움이 되었습니다.
+                        <footer>우정민</footer>
+                    </blockquote>
+                    <p class="reviewGrade"><span>★ ★ ★ ★ ★</span> <span>5점</span></p>
+                    <button type="button">재생 버튼</button>
+                </section>
+                <div class="lectureBrochureContainer">
+                    <section class="favoriteLecture">
+                        <h3 class="lectureHeading" id="lecture">카페 <span>W</span> 인기 강좌</h3>
+                        <ol class="lectureList">
+                            <li><a href="#">UI 구조 &amp; 디자인</a><em class="up">순위 상승</em></li>
+                            <li><a href="#">모바일 웹 UI 제작 실습</a><em class="new">새로운 소식</em></li>
+                            <li><a href="#">UI 인터렉션 주니어</a><em class="down">순위 하락</em></li>
+                            <li><a href="#">React 프로그래밍</a><em class="noChange">변동 없음</em></li>
+                        </ol>
+                        <a href="#" aria-labelledby="lecture" title="더보기"><img src="../images/Add.svg" alt="더보기"></a>
+                    </section>
+                    <section class="brochure">
+                        <h3 class="brochureHeading"><a href="#">브로슈어 다운받기</a></h3>
+                        <img src="../images/Cafe-Brochure.svg" alt="브로슈어 이미지">
+                        <a href="#">브로슈어 다운받기</a>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- section4 -->
+        <section class="cafewYoutube">
+            <h2 class="a11y-hidden">cafe W 유튜브 영상</h2>
+            <figure class="cafewYoutubeContainer iframeContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lmYSIiZFxPI"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen aria-labelledby="cafew_youtube" title="스크린리더 최적화 마크업 영상"></iframe>
+                <figcaption id="cafew_youtube" class="a11y-hidden">스크린리더 사용자를 위한 착한마크업(상품가격 및 할인율)</figcaption>
+            </figure>
+        </section>
+        <!-- section5 -->
+        <section class="reserveMagazine">
+            <h2 class="a11y-hidden">언론 속 카페W</h2>
+            <p class="reserveBrief" lang="en">
+                CAFE W . RESERVE
+                <span class="whiteSpace">A DELICATE FRAGRANCE</span>
+            </p>
+            <p class="reserveBrief" lang="ko">
+                입 안 가득 퍼지는 산뜻하고
+                <span class="whiteSpace">따뜻한 봄의 향기</span>
+            </p>
+            <a class="reserveMagazineMore" href="#">자세히 보기</a>
+        </section>
+        <!-- section6 -->
+        <section class="favoriteMenu">
+            <h2 class="a11y-hidden">선호 메뉴 추천</h2>
+            <div class="favMenuContainer">
+                <p class="favHeadline" lang="en"><span>Pick</span> <span>your</span> <span>favorite</span></p>
+                <p class="favBrief">카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료 카페
+                    <span class="whiteSpace">W 커피와 완벽한 어울림을 자랑하는 푸드</span>
+                    <span class="whiteSpace">사용한 시도와 디자인으로 가치를 더하는 상품</span>
+                    소중한 사람에게 마음을 전하는 가장 좋은 방법. 카페 W 카드</p>
+                <span class="favText">다양한 메뉴를 카페 W에서 즐겨보세요</span>
+                <a href="#" target="_self" class="favPlus" title="cafe W 메뉴">자세히 보기</a>
+            </div>
+            <div class="favImg01"></div>
+            <div class="favImg02"></div>
+            <div class="favImg03"></div>
+        </section>
+        <!-- section7 -->
+        <section class="coffeeLab">
+            <h2 class="a11y-hidden">카페 W 커피연구소</h2>
+            <p lang="en">CAFE W <span>COFFEE LAB</span></p>
+            <p lang="ko">최고의 커피를 향한 끊임없는 노력, <span>카페 W 커피연구소</span></p>
+            <ul class="labList">
+                <li class="labMenu">
+                    <a class="labMenuMore" href="#">LAB MENU</a>
+                </li>
+                <li class="labBarista">
+                    <a class="labBaristaMore" href="#">LAB BARISTA</a>
+                </li>
+            </ul>
+        </section>
+        <!-- section8 -->
+        <section class="curriculum">
+            <h2 class="a11y-hidden">이듬 러닝 커리큘럼</h2>
+            <div class="curContainer">
+                <div class="curFront">
+                    <svg width="90" height="122" viewBox="0 0 70 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="1">
+                            <path
+                                d="M35 0L39.2658 13.1287H53.0701L41.9022 21.2426L46.1679 34.3713L35 26.2574L23.8321 34.3713L28.0978 21.2426L16.9299 13.1287H30.7342L35 0Z"
+                                fill="#7D6F5D" />
+                            <line x1="1" y1="51" x2="69" y2="51" stroke="#7D6F5D" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path
+                                d="M20.3601 67.2249H15L26.9133 94.9457L34.929 77.4977L42.8163 95L55 67.2249L49.6543 67.2347L42.8835 83.1178L34.9052 66.1741L26.9949 83.1178L20.3601 67.2249Z"
+                                fill="#7D6F5D" />
+                        </g>
+                    </svg>
+                </div>
+                <article class="curBack">
+                    <h3 class="curTitle">이듬 블렌디드 러닝</h3>
+                    <p class="curBrief">이듬 블렌디드 러닝 과정에서 운영하는 <span class="whiteSpace">각 과정의 자세한 커리큘럼을 확인</span>하려면
+                        <em>과정 보기</em>를 눌러주세요.</p>
+                    <a href="#" target="_self" class="curPlus" title="이듬 블렌디드 러닝 커리큘럼">과정 보기</a>
+                </article>
+            </div>
+        </section>
+        <!-- section9 -->
+        <section class="cafewStore">
+            <h2 class="a11y-hidden"><span lang="en">cafe W</span> 매장 찾기</h2>
+            <div class="storeContainer">
+                <p class="storeHeadline">카페 W를 가까이에서 경험해보세요.</p>
+                <p class="storeBrief">고객님과 가장 가까이 있는 매장을 찾아보세요!</p>
+                <p class="storeList">차별화된 커피 경험을 누릴 수 있는 <em>리저브 매장</em><span class="whiteSpace">다양한 방법으로 편리하게 즐길 수 있는
+                        드라이브 <em>스루 매장</em></span>함께해서 더 따뜻할수 있는 지역사회 소통 공간 <em>커뮤니티 매장</em></p>
+                <a href="#" class="storePlus" target="_self" title="전국 카페 W">매장 찾기</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="../images/Cafe-W-(Vertical).svg" alt="CAFE W 로고 이미지" title="CAFE W 로고 이미지">
+        <ul class="footerList">
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">멤버스 이용약관</a></li>
+            <li><a href="#">가맹 안내</a></li>
+            <li><a href="#">대량 쿠폰판매</a></li>
+            <li><a href="#">채용 안내</a></li>
+            <li><a href="#">고객의 소리</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>
+        <address class="address">
+            <span>서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F)</span>
+            <span aria-hidden="true">ㅣ</span>
+            <span>연락처 : 02-6951-2121</span>
+            <span>사업자 등록번호 : 107-86-16302</span>
+            <span aria-hidden="true">ㅣ</span>
+            <span>통신판매업 신고 : 강남 제 002519호</span>
+            <span aria-hidden="true">ㅣ</span>
+            <span>대표이사 : 김데레사</span>
+        </address>
+        <small class="copyright">© 2020 CAFE W COMPANY. ALL rights reserved.</small>
+    </footer>
+    <div class="upButtonWrapper">
+        <a href="#skip_nav" class="upButton">위로 가기</a>
+    </div>
+</body>
+
+</html>
